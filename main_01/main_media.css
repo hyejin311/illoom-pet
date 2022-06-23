@@ -1,8 +1,20 @@
 @charset "UTF-8";
-@media screen and (min-width:1330px){}
-@media screen and (max-width:1329px) and (min-width:1150px){}
+@media screen and (min-width:1440px){
+    #content02{
+        width: 1200px;
+    }
+}
 
-@media screen and (max-width:1149px) and (min-width:990px){
+/* tablet */
+@media screen and (max-width:1399px) and (min-width:980px){
+
+
+
+}
+
+
+/* 타블릿 */
+@media screen and (max-width:980px) and (min-width:580px){
 /* div#wrap */
 div#wrap{
 width:100%;
@@ -93,8 +105,5 @@ padding:20px 0;
 
 }
 
-/* tablet */
-@media screen and (max-width:989px) and (min-width:580px){}
-
 /* mobile */
-@media screen and (max-width:579px) and (min-width:480px){}
+@media screen and (max-width:579px){}
