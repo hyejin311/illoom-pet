@@ -12,16 +12,14 @@ div#wrap{
     }
 
 /* nav */
-nav
+nav.navbar{
+    
+}
 
 ul.small_nav{
-   position:absolute;
-   top:50%; right:0;
-    }
-    
-    ul.small_nav>li{
-        width:50px;
-    }
+display: none;
+}
+
     section#content01{
         position:relative;
         margin-bottom:40px;

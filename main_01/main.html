@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>일룸 pet 메인페이지</title>
+    <script src="https://kit.fontawesome.com/4476cc0614.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="./main.css">
+    <!-- <link rel="stylesheet" href="./main_media.css"> -->
 </head>
 
 <body>
@@ -17,10 +19,19 @@
 <header>
 <h1>
 <a href="#"><img src="/img/header/red_logo.png" alt="logo"></a> </h1>
+
+<!-- ul.small_nav -->
 <ul class="small_nav">
     <li><a href="#">로그인</a></li>
     <li><a href="#">회원가입</a></li>
 </ul>
+
+<!-- navbar 햄버거 버튼 -->
+<div class="navbar_x">
+    <a href="">
+        <i class="fa-solid fa-bars"></i>
+    </a></div>
+
 </header>
 </div>
 
@@ -61,19 +72,45 @@
 </ul>
 </div>
 </div>
+
+<!-- div#prev -->
+<div id="prev">
+    <a href="#">
+        <i class="fa-solid fa-angle-left"></i>
+    </a>
 </div>
-</article>
-<!-- nav -->
-<nav>
-    <ul>
-        <li class="nav1"><a href="#">일룸소개</a></li>
-        <li class="nav2"><a href="#">가구</a></li>
-        <li class="nav3"><a href="#">이벤트</a></li>
-        <li class="nav4"><a href="#">공지사항</a></li>
-        <li class="nav5"><a href="#">보도자료</a></li>
-        <li class="nav6"><a href="#">검색</a></li>
+
+<!-- div#next -->
+<div id="next">
+    <a href="#">
+        <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+</div>
+
+<!-- nav.navbar -->
+<nav class="navbar">
+
+<!-- div.navbar_logo -->
+<!-- <div class="navbar_logo"></div> -->
+    
+<!-- navbar_x 버튼 -->
+    <div class="navbar_x">
+    <a href="">
+    <i class="fa-solid fa-xmark"></i>
+    </a></div>
+    
+<!-- ul.navbar_menu -->
+    <ul class="navbar_menu">
+        <li><a href="#">일룸 소개</a></li>
+        <li><a href="#">가구</a></li>
+        <li><a href="#">이벤트</a></li>
+        <li><a href="#">공지사항</a></li>
+        <li><a href="#">보도자료</a></li>
+        <li><a href="#">검색</a></li>
     </ul>
-</nav>
+    </nav>
+</article>
 </div>
 
 <!-- article 02 -->
@@ -222,15 +259,17 @@
 
 <ul>
 <p class="up_btn">
-    <button type="button">up</button></p>
+    <i class="fa-solid fa-caret-up"></i></p>
+
     <li>
         <img src="/img/main/video02.png" alt="동영상목록 1"></li>
     <li>
         <img src="/img/main/video03.png" alt=" 동영상목록 2"></li>
     <li>
         <img src="/img/main/video04.png" alt=" 동영상목록 3"></li>
+        
 <p class="down_btn">
-    <button type="button">down</button></p>
+    <i class="fa-solid fa-caret-down"></i></p>
 </ul>
 </div>
 
