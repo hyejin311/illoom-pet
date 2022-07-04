@@ -269,7 +269,8 @@ color: rgba(172, 133, 92);
 
 /* article#content03 */
 #content03{
-    width: 98%; height:800px;
+    width: 98%;
+    height:800px;
     margin:70px auto 0;
     padding:50px 0;
     background-color:#fff;

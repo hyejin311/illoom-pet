@@ -371,7 +371,6 @@ div#content01{
     margin-top:70px;
 }
 #content01>article{
-    height: 100%;
     padding:0;
 }
 
@@ -411,37 +410,26 @@ div.gall>ul>li>dl>dd{
 
 /* #content02>div#test_pic */
 #content02>div#test_pic{
-    width: 989px;
-    margin:0 auto;
+    width: 100%;
     padding:0 10px;
     box-sizing:border-box;
-    flex-wrap: wrap;
+}
+
+div#test_pic>figure.pic01{
 
 }
-div#test_pic>figure.pic01{
-    width: 450px;
-}
 div#test_pic>figure.pic02{
-    width: 450px;
+
 }
 div#test_pic>figure.pic03{
-width: 100%;
-display:flex;
-flex-wrap:wrap;
-}
-div#test_pic>figure.pic03>img.pic03_1,img.pic03_2,img.pic03_3{
+    display:flex;
+    flex-wrap: wrap;
     width:300px;
- }
- 
- #content02>div#test_pic>figure.pic03>img.pic03_3{
-     margin-bottom:0;
- }
+}
 
 /* #content02>div.test_btn */
 #content02>div#test_pic>div.test_btn{
-    width:980px;
-    display:flex;
-    padding:10px 0;
+
 }
 div#test_pic>div.test_btn>p>button{
     width: 50px; height: 20px;
@@ -449,37 +437,29 @@ div#test_pic>div.test_btn>p>button{
 
 /* #content03 */
 #content03{
-    width: 980px;
+    width: 989px;
     margin:40px auto;
     padding:0px 10px;
-    position:relative;
 }
 #content03>h3{
-    font-size: 1.5em;
     margin-bottom:30px;
 }
 #content03>ul.illomlife{
     position:absolute;
-    margin-top:50px;
-    padding:0 10px;
     width:989px;
-    display:flex;
+    margin-top:40px;
+    padding:0 10px;
 }
-#content03>ul.illomlife>li{
-    width:450px;
+#content03>ul.illomlife li{
+width:450px;
 }
 
 #content03>ul.illomlife li figure{
-    width:450px;
+    margin-bottom:10px;
 }
-
-/* #content03>ul.illomlife li figure img:first-child{
-width: 450px;
-} */
 
 #content03>ul.illomlife li figure>figcaption{
 margin:10px 0 auto;
-width:100%;
 }
 
 #content03>ul.illomlife li figure figcaption p{
@@ -501,15 +481,19 @@ width:170px;
 
 /* #content04 */
 article#content04{
-    display:none;
-    width:980px;
+    width:989px;
+    height: auto;
     margin:40px 0 auto;
     padding:0;
     position: relative;
 }
+#content04>h3{
+    margin-bottom: 40px;
+}
+
 #content04>div.video_img{
     width:940px;
-    margin:40px 0 auto;
+    margin:0 auto;
     display:block;
     justify-content: center;
 }
@@ -544,9 +528,6 @@ article#content05{
     width:980px;
     margin:70px 0 auto;
     padding:0 20px;
-}
-#content05>h3{
-    width:300px;
 }
 #content05>ul.illom_news{
     display: flex;
