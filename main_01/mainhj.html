@@ -7,8 +7,8 @@
     <title>일룸 pet 메인페이지 포기는 김치담궈라</title>
     <script src="https://kit.fontawesome.com/4476cc0614.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./main_media.css">
+    <link rel="stylesheet" href="./mainhj.css">
+    <link rel="stylesheet" href="./main_media_hj.css">
 </head>
 
 <body>
@@ -18,7 +18,9 @@
 <div id="header">
 <header>
 <h1>
-<a href="#"><img src="/img/header/red_logo.png" alt="logo"></a> </h1>
+<a href="#">
+    <img src="/img/header/red_logo.png" alt="logo"></a>
+</h1>
 
 <!-- navbar 햄버거 버튼 -->
 <div class="nav_btn">
@@ -72,20 +74,16 @@
 
 <!-- div#prev -->
 <p class="prev">
-    <a href="#">
         <i class="fa-solid fa-circle-chevron-left"></i>
-    </a>
 </p>
 
 <!-- div#next -->
 <p class="next">
-    <a href="#">
         <i class="fa-solid fa-circle-chevron-right"></i>
-    </a>
 </div>
 </div>
 </div>
-</div>
+</article>
 
 <!-- nav.navbar -->
 <nav class="navbar">
@@ -99,21 +97,21 @@
         <li><a href="#">보도자료</a></li>
         <li><a href="#">검색</a></li>
     </ul>
-    </nav>
+</nav>
 
-    <!-- div#top_btn -->
+<!-- div#top_btn -->
 <div id="top_btn">
     <a href="#">Top</a>
 </div>
-
-</article>
 </div>
+
 
 <!-- article 02 -->
 <article id="content02">
 <div class="title">
     <h3>우리 집 반려동물 X 캐스터네츠 취향 테스트</h3>
-    <p>우리 집 반려동물에게는 어떤 캐스터네츠가 어울릴까? <br>취향 테스트를 통해 알아봐요</p>
+    <p>우리 집 반려동물에게는 어떤 캐스터네츠가 어울릴까? <br>
+        취향 테스트를 통해 알아보기</p>
 </div>
 
 <!-- div id=test_pic -->
@@ -146,14 +144,14 @@
     <p>데스크스텝 / 해먹 테이블 / 펫 소파</p>
 </figcaption>
 </figure>
+</div>
 
 <!-- p class=test_btn -->
 <div class="test_btn">
-<p>
-    <button type="button">TEST</button>
-</p>
-</div>
-</div>
+    <p>
+        <button type="button">TEST</button>
+    </p>
+    </div>
 </article>
 
 <!-- article 03 -->
@@ -251,22 +249,38 @@
 <article id="content04">
 <h3>고양이야 캐스터네츠 어때</h3>
 <div class="video_img">
+    <p>
     <img src="/img/main/video_main.png" alt="메인 동영상">
+    </p>
+    <!-- ul 에 넣으면 안됨 -->
 
+<div>
 <ul>
-<p class="up_btn">
-    <i class="fa-solid fa-caret-up"></i></p>
-
     <li>
         <img src="/img/main/video02.png" alt="동영상목록 1"></li>
     <li>
         <img src="/img/main/video03.png" alt=" 동영상목록 2"></li>
     <li>
         <img src="/img/main/video04.png" alt=" 동영상목록 3"></li>
-        
-<p class="down_btn">
-    <i class="fa-solid fa-caret-down"></i></p>
 </ul>
+
+<p class="up_btn">
+    <i class="fa-solid fa-caret-up"></i>
+</p>
+
+<p class="down_btn">
+    <i class="fa-solid fa-caret-down"></i>
+</p>
+
+<p class="left_btn">
+    <i class="fa-solid fa-caret-left"></i>
+</p>
+
+<p class="right_btn">
+    <i class="fa-solid fa-caret-right"></i>
+</p>
+
+</div>
 </div>
 
 <div class="video_desc">
@@ -326,8 +340,6 @@
 <!-- footer -->
 <footer>
 <!-- top button -->
-<!-- <p class="top">
-    <button></button></p> -->
 
 <div class="up_footer">
     <ul>
@@ -401,5 +413,6 @@
 <small>webmaster@iloom.com·Copyright (c) 2018 iloom lnc. All rights reserved</small>
 </footer>
 </div>
+
 </body>
 </html>
