@@ -158,7 +158,8 @@ div.gall>ul>li>dl>dt{
 div.gall>ul>li>dl>dd{
     line-height:25px;
     font-size:1.2em;
-    font-weight: bold;}
+    font-weight: bold;
+}
 
 /* nav */
 nav.navbar{
@@ -171,10 +172,18 @@ nav.navbar{
     align-items: center;
 }
 
+nav.navbar>p.close_btn{
+    display:none;
+}
+
 nav>ul.navbar_menu{
 width:65.21%;  /* 150px; */
 text-align:right;
 margin:0 auto;
+}
+
+ul.navbar_menu>div.navbar_logo{
+    display: none;
 }
 
 ul.navbar_menu>li{
@@ -182,7 +191,11 @@ margin-bottom: 13.04%; /* 30px; */
 }
 
 ul.navbar_menu>li:last-child{
-margin-bottom:0px;
+    margin-bottom:0;
+}
+
+ul.navbar_menu>li:first-child{
+display:none;
 }
 
 ul.navbar_menu>li>a{
@@ -498,6 +511,15 @@ text-align: center;
 #content05 ul.illom_news li{
     width:31%;
 }
+
+#content05>ul.illom_news>li.news_02>figure>figcaption>dl>dt{
+font-size: 1em;
+}
+
+#content05>ul.illom_news>li.news_02>figure>figcaption>dl>dd{
+    font-size: 15px;
+}
+
 #content05 ul.illom_news li figure img{
     width:100%;
 margin-bottom:30px;
@@ -540,6 +562,7 @@ footer{
 /* div.up_footer */
 footer>div.up_footer{
 padding:20px 0;
+box-sizing: border-box;
 }
 
 div.up_footer>ul{
@@ -548,9 +571,11 @@ div.up_footer>ul{
 }
 
 div.up_footer>ul>li{
+    cursor: pointer;
     display: inline-block;
     /* justify-content: space-evenly; */
     padding:0 25px;
+    box-sizing: border-box;
     border-right: 2px solid #fff;
 }
 
@@ -572,9 +597,8 @@ div.down_footer>div.footer_info{
     width:/* 1200px */98%;
     display: flex;
     flex-wrap: wrap;
-    /* position:absolute;
-    left:0; top:0; */
     padding:10px 0;
+    box-sizing: border-box;
     margin:0 auto;
 }
 
@@ -586,24 +610,18 @@ div.footer_info dl{
 }
 
 div.footer_info>dl>dt{
-    width:350px;
+    width:35vw;
     margin-right:10px;
 }
 
 div.footer_info dl>dd{
-    width:200px;
+    width:65vw;
     margin-right:50px;
-}
-
-div.footer_info dl>dd:last-child{
-    width:500px;
 }
 
 div.down_footer>div.sns_icon{
     width:98%/* 1200px */;
     margin: 0 auto;
-    /* position:absolute;
-    right:0; bottom:0; */
 }
 
 div.down_footer>div.sns_icon ul{
@@ -612,6 +630,7 @@ margin-top:-30px;
 }
 
 div.sns_icon ul li{
+    cursor: pointer;
     display:inline-block;
     margin: 0 10px;
 }
