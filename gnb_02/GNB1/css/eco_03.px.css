@@ -290,7 +290,7 @@ div.footer_info dl>dd:last-child{
 }
 
 div.down_footer>div.sns_icon{
-    width:98%/* 1200px */;
+    width:60%; /* 920px; */
     margin: 0 auto;
 }
 

@@ -13,11 +13,9 @@ main{
 }
 
 section#content02,section#content03{
-    width: 98%;
     padding:20px;
     box-sizing: border-box;
     text-align: center;
-    margin:0 auto; 
 }
 
 section#content03>figure>img:first-child{
@@ -56,7 +54,7 @@ width: 90%;
 
 section#content03>figure img{
     width:45%;
-    height: 38vh;
+    height: 50vh;
 }
 
 section figure>figcaption{
@@ -75,7 +73,7 @@ section figure>figcaption>dl>dt{
 }
 
 section figure>figcaption>dl>dd{
-    line-height:2;
+    line-height:37px;
 }
 
 /* div#header */
@@ -126,11 +124,12 @@ ul.list>li>a:hover{
     background-color: rgba(128, 128, 128,0.3);
 }
 
-nav.navbar{
+nav.navbar,div.nav_btn{
     display:none;
 }
-div.nav_btn{
-    display: none;
+
+ul.navbar_menu>div.nav_logo{
+    display:none;
 }
     
 div#top_btn{
@@ -150,7 +149,7 @@ color:#fff;
 
 /* section#content01 */
 section#content01{
-    width:98% /* 1200px */;
+    width:100% /* 1440px */;
     height: 100vh; /* 100%; */
     cursor: pointer;
     background:url('/img/GNB01/main02_img.png') no-repeat center top;
@@ -158,11 +157,11 @@ section#content01{
 }
 
 section#content01>dl{
-    width:100% /* 1200px */;
+    width:100%;
     position:absolute;
     display:flex;
     justify-content: center;
-    padding-top:12.5vh; /* 100px; */
+    padding-top:100px;
     box-sizing: border-box;
     color:#fff;
     text-shadow:2px 2px 3px rgba(172, 133, 92, 0.9);
@@ -226,9 +225,9 @@ margin-bottom: 10px;
 
 /* footer */
 footer{
+    width: 100%;
     padding:0 0 20px;
     box-sizing: border-box;
-    /* width: 100%; height: 220px; */
     color:#fff;
     background-color: rgba(172, 133, 92, 1);
 }
@@ -240,15 +239,13 @@ box-sizing: border-box;
 }
 
 div.up_footer>ul{
-    /* display: flex; */
     text-align:center;
 }
 
 div.up_footer>ul>li{
     cursor: pointer;
     display: inline-block;
-    /* justify-content: space-evenly; */
-    padding:0 25px;
+    padding:10px 25px;
     box-sizing: border-box;
     border-right: 2px solid #fff;
 }
@@ -260,9 +257,7 @@ div.up_footer>ul>li:last-child{
 /* footer>div.down_footer */
 footer>div.down_footer{
 position:relative;
-/* width:1400px; height: 154px; */
 padding:30px 0;
-margin:0 auto;
 box-sizing: border-box;
 border-top:1px solid #fff;
 }
@@ -294,7 +289,7 @@ div.footer_info dl>dd{
 }
 
 div.down_footer>div.sns_icon{
-    width:98%/* 1200px */;
+    width:60%; /* 920px; */
     margin: 0 auto;
 }
 
