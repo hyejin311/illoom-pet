@@ -110,19 +110,21 @@ div.nav_btn:hover{
 
 div#filter{
     width: 100%;
+    display:inline-block;
     padding:30px 0 40px;
 }
 
 ul.option{
     width: 400px;
+    height: 50%;
 }
 
-ul.pricefilter{
+div#filter>ul.pricefilter{
     width: 200px;
-    left:70%;
+    height: 50%;
 }
 
-ul.pricefilter>li>a{
+div#filter>ul.pricefilter>li>a{
     font-size: 12px;
 }
 
@@ -137,7 +139,7 @@ div#big_box>ul>li{
 div#big_box>ul>li>figure>figcaption{
     padding:10px;
     box-sizing: border-box;
-    height: 20vh;
+    height: 14vh;
 }
 
 div#big_box>ul>li>figure>figcaption>dl{

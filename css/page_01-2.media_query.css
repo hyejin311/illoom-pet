@@ -42,16 +42,6 @@ nav.navbar{
     z-index: 500;
 }
 
-div.nav_btn{
-    display: flex;
-    position:absolute;
-    top:0; right:0;
-    margin:20px;
-    padding:5px;
-    box-sizing: border-box;
-    cursor:pointer;
-}
-
 nav.navbar>ul.navbar_menu{
     width:40vw;
     height: 100vh;
@@ -101,6 +91,16 @@ nav.navbar>p.close_btn{
 nav.navbar>p.close_btn:hover{
     background-color:rgba(51,51,51,0.4);
     border-radius: 50%;
+}
+
+div.nav_btn{
+    display: flex;
+    position:absolute;
+    top:0; right:0;
+    margin:20px;
+    padding:5px;
+    box-sizing: border-box;
+    cursor:pointer;
 }
 
 div.nav_btn:hover{

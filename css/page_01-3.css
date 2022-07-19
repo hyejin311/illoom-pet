@@ -101,17 +101,20 @@ nav.navbar,div.nav_btn{
 
 div#top_btn{
     position:fixed;
-    z-index: 999;
+    z-index:999;
+    width: 60px; height: 60px;
     bottom:5%; right:5%;
-    width:40px; height: 40px;
+    border-radius: 100%;
     background-color: #c7a786;
     box-shadow: 5px 5px 5px rgba(172, 133, 92, 0.4);
     cursor: pointer;
 }
 
 div#top_btn>a{
-width:40px; height: 40px;
-color:#fff;
+    position:absolute;
+    left:28%; top:30%;
+    width:40px; height: 40px;
+    color:#fff;
 }
 
 /* section#content01 */
@@ -124,7 +127,7 @@ section#content01{
 }
 
 section#content01>dl{
-    width:100% ;
+    width:100%;
     position:absolute;
     display:flex;
     justify-content: center;

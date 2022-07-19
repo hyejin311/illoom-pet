@@ -67,14 +67,17 @@ ul.navbar_menu>div.nav_logo{
 div#top_btn{
     position:fixed;
     z-index:999;
-    width: 40px; height: 40px;
+    width: 60px; height: 60px;
     bottom:5%; right:5%;
+    border-radius: 100%;
     background-color: #c7a786;
     box-shadow: 5px 5px 5px rgba(172, 133, 92, 0.4);
     cursor: pointer;
 }
 
 div#top_btn>a{
+    position:absolute;
+    left:28%; top:30%;
     width:40px; height: 40px;
     color:#fff;
 }
@@ -83,7 +86,6 @@ div#top_btn>a{
 section#content01{
     width:100%;
     height: 100vh; /* 800px; */
-    margin-top:70px;
     cursor:pointer;
     background: url('/img/page_01-2/main_img.png') no-repeat center top;
     position:relative;
@@ -98,6 +100,7 @@ section#content01>h2{
     font-weight: bold;
     text-align: center;
     color:#fff;
+    text-shadow:2px 2px 3px rgba(172, 133, 92, 0.9);
 }
 
 /* div.filter */
@@ -194,9 +197,9 @@ div#big_box>ul>li>figure>figcaption{
 }
 
 div#big_box>ul>li>figure>figcaption>dl{
-    line-height: 30px;
+    line-height: 25px;
     text-align: left;
-    height: 18vh;
+    height: 13vh;
 }
 
 div#big_box>ul>li>figure>figcaption>dl>dt{
