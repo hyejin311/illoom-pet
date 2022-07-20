@@ -6,36 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이벤트 메인페이지</title>
     <script src="https://kit.fontawesome.com/4476cc0614.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/page_03-1.css">
+    <link rel="stylesheet" href="/css/page_03-1.media_query.css">
 </head>
 
 <body>
-    <!-- 01_mainpage -->
-    <div id="wrap">
-    <!-- header -->
-    <div id="header">
-    <header>
-    <h1>
-        <a href="#">
-        <img src="/img/red_logo.png" alt="logo"></a></h1>
+<!-- 01_mainpage -->
+<div id="wrap">
+<!-- header -->
+<div id="header">
+<header>
+<h1>
+    <a href="#">
+    <img src="/img/red_logo.png" alt="logo"></a></h1>
+            
+<!-- ul.small_nav -->
+<ul class="small_nav">
+    <li><a href="#">로그인</a></li>
+    <li><a href="#">회원가입</a></li>
+</ul>
         
-    <!-- ul.small_nav -->
-    <ul class="small_nav">
-        <li><a href="#">로그인</a></li>
-        <li><a href="#">회원가입</a></li>
-    </ul>
-    
-    <!-- navbar 햄버거 버튼 -->
-    <div class="nav_btn">
-        <i class="fa-solid fa-bars"></i>
-    </div>
-    </header>
-
+<!-- navbar 햄버거 버튼 -->
+<div class="nav_btn">
+    <i class="fa-solid fa-bars"></i>
+</div>
+</header>
+        
 <!-- nav.navbar -->
 <nav class="navbar">
-    <!-- ul.navbar_menu -->
-    <ul class="navbar_menu">
+<!-- ul.navbar_menu -->
+<ul class="navbar_menu">
 <div class="nav_logo">
     <img src="/img/red_logo.png" alt="내비 로고">
 </div>
@@ -47,14 +48,14 @@
     <li><a href="#">공지사항</a></li>
     <li><a href="#">보도자료</a></li>
 </ul>
-    
+            
 <!-- p.close_btn -->
 <p class="close_btn">
     <i class="fa-solid fa-x"></i>
 </p>
 </nav>
 </div>
-
+        
 <!-- div#top_btn -->
 <div id="top_btn">
     <a href="#">Top</a>
@@ -69,51 +70,45 @@
 <main>
 <section id="content02">
 <ul>
-<li class="event_01">
-    <div class="left">
-        <a href="#">
-        <img src="/img/page_01-3/event01.png" alt="이벤트이미지1"></a>
-    </div>
+<li>
+    <p class="img_01">
+    <a href="#">
+    <img src="/img/page_01-3/event01.png" alt="이벤트이미지1"></a>
+</p>
 
-    <div class="right">
-    <dl>
-        <dt>2022.06.02 ~ 2022.06.30</dt>
-        <dd>캐스터네츠 취향 테스트</dd>
-        <dd>우리 집 반려동물은 어떤 가구를 필요로 할까?
-        일룸 캐스터네츠 취향 찾기!</dd>
-    </dl>
-</div>
+<p class="text_01">
+    <span>2022.07.01 ~ 2022.07.30</span> <br />
+    <span>캐스터네츠 취향 테스트</span> <br />
+    <span>우리 집 반려동물은 어떤 가구를 필요로 할까?<br />
+        일룸 캐스터네츠 취향 찾기!</span>
+</p>
 </li>
 
-<li class="event_02">
-    <div class="left">
+<li>
+    <p class="img_02">
         <a href="#">
         <img src="/img/page_01-3/event02.png" alt="이벤트이미지2"></a>
-    </div>
+        </p>
 
-    <div class="right">
-    <dl>
-        <dt>2022.06.15 ~ 2022.07.15</dt>
-        <dd>HELLO ! SUMMER</dd>
-        <dd>HELLO ! SUMMER <br>
-        여름맞이 일룸이 시원하게 쏜다!</dd>
-    </dl>
-</div>
+    <p class="text_02">
+        <span>2022.06.30 ~ 2022.07.30</span> <br />
+        <span>HELLO ! SUMMER</span> <br />
+        <span>HELLO ! SUMMER <br />
+        여름맞이 일룸이 시원하게 쏜다!</span>
+    </p>
 </li>
 
-<li class="event_03">
-    <div class="left">
+<li>
+    <p class="img_03">
         <a href="#">
         <img src="/img/page_01-3/event03.png" alt="이벤트이미지3"></a>
-    </div>
+        </p>
 
-    <div class="right">
-    <dl>
-        <dt>2022.06.10 ~ 2022.07.10</dt>
-        <dd>#우리일룸생활 제품 후기 이벤트</dd>
-        <dd>일룸으로 채운 우리의 일상을 올려주시면 추첨을 통해 선물 팡팡!</dd>
-    </dl>
-</div>
+    <p class="text_03">
+        <span>2022.06.10 ~ 2022.07.10</span> <br />
+        <span>#우리일룸생활 제품 후기 이벤트</span> <br />
+        <span>일룸으로 채운 우리의 일상을 올려주시면 추첨을 통해 선물 팡팡!</span>
+    </p>
 </li>
 </ul>
 </section>
@@ -121,19 +116,18 @@
 
 <!-- footer -->
 <footer>
-    <!-- top button -->
+<!-- top button -->        
+<div class="up_footer">
+<ul>
+    <li>이용약관</li>
+    <li>개인정보처리방침</li>
+    <li>대리점 개설안내</li>
+    <li>서비스센터</li>
+</ul>
+</div>
         
-    <div class="up_footer">
-    <ul>
-        <li>이용약관</li>
-        <li>개인정보처리방침</li>
-        <li>대리점 개설안내</li>
-        <li>서비스센터</li>
-    </ul>
-    </div>
-        
-    <div class="down_footer">
-    <div class="footer_info">
+<div class="down_footer">
+<div class="footer_info">
     <dl>
         <dt>사업자등록번호</dt>
         <dd>215-86-93600</dd>
@@ -180,7 +174,7 @@
     </dl>
     </div>
         
-    <div class="sns_icon">
+<div class="sns_icon">
     <ul>
         <li><a href="#">
             <img src="/img/main/sns_icon01.png" alt="인스타그램"></a></li>
@@ -189,11 +183,11 @@
         <li><a href="#">
             <img src="/img/main/sns_icon03.png" alt="네이버블로그"></a></li>
     </ul>
-    </div>
-    </div>
+</div>
+</div>
         
-    <small>webmaster@iloom.com·Copyright (c) 2018 iloom lnc. All rights reserved</small>
-    </footer>
-    </div>
-    </body>
-    </html>
+<small>webmaster@iloom.com·Copyright (c) 2018 iloom lnc. All rights reserved</small>
+</footer>
+</div>
+</body>
+</html>

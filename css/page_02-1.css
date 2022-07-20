@@ -16,7 +16,7 @@ main{
 
 /* div#header */
 div#header{
-    width:100%;/* 1440px */
+    width:100%;
     height: 70px;
     background-color:rgba(172, 133, 92, 0.9);
     box-sizing: border-box;
