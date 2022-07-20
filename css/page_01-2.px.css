@@ -124,9 +124,10 @@ ul.list>li>a:hover{
     background-color: rgba(128, 128, 128,0.3);
 }
 
-nav.navbar,div.nav_btn{
-    display:none;
-}
+/* none */
+div.nav_btn{display:none;}
+nav{display:none;}
+p.close_btn{display:none;}
     
 div#top_btn{
     position:fixed;

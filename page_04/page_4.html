@@ -6,39 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이 달의 뉴스 메인페이지</title>
     <script src="https://kit.fontawesome.com/4476cc0614.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="./css/news_01.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/page_04-1.css">
 </head>
 
 <body>
-<!-- 01_mainpage -->
-<div id="wrap">
+    <!-- 01_mainpage -->
+    <div id="wrap">
     <!-- header -->
     <div id="header">
     <header>
     <h1>
-    <a href="#"><img src="/img/header/red_logo.png" alt="logo"></a> </h1>
-    
-    <!-- navbar 햄버거 버튼 -->
-    <div class="nav_btn">
-        <a href="">
-            <i class="fa-solid fa-bars"></i>
-        </a></div>
-    
+        <a href="#">
+        <img src="/img/red_logo.png" alt="logo"></a></h1>
+                
     <!-- ul.small_nav -->
     <ul class="small_nav">
         <li><a href="#">로그인</a></li>
         <li><a href="#">회원가입</a></li>
     </ul>
+            
+    <!-- navbar 햄버거 버튼 -->
+    <div class="nav_btn">
+        <i class="fa-solid fa-bars"></i>
     </div>
-</header>
-</div>
+    </header>
+            
+    <!-- nav.navbar -->
+    <nav class="navbar">
+    <!-- ul.navbar_menu -->
+    <ul class="navbar_menu">
+    <div class="nav_logo">
+        <img src="/img/red_logo.png" alt="내비 로고">
+    </div>
+        <li><a href="#">
+            <i class="fa-solid fa-magnifying-glass"></i></a></li>
+        <li><a href="#">일룸 소개</a></li>
+        <li><a href="#">가구</a></li>
+        <li><a href="#">이벤트</a></li>
+        <li><a href="#">공지사항</a></li>
+        <li><a href="#">보도자료</a></li>
+    </ul>
+                
+    <!-- p.close_btn -->
+    <p class="close_btn">
+        <i class="fa-solid fa-x"></i>
+    </p>
+    </nav>
+    </div>
+            
+    <!-- div#top_btn -->
+    <div id="top_btn">
+        <a href="#">Top</a>
+    </div>
 
 <!--  01 -->
 <section id="content01">
     <h2>이 달의 뉴스</h2>
 </section>
 
+<main>
 <!-- section id="content02" -->
 <section id="content02">
 <!-- div class=title -->
@@ -76,84 +103,82 @@
     <p>미국동물학대방지협회(ASPCA)에서 고양이에게 해로운 꽃과 식물을 정리했습니다. 이 식물들은 고양이가 먹으면 구토, 설사, 탈수 증상, 전신 마비, 혼수 등을 일으킬 수 있습니다. 특히 백합과와 진달랫과, 미나리아재비과 등은 생명과 직결될 정도로 매우 위험도가 높습니다. 백합은 꽃가루에 닿거나 꽃병의 물을 마시는 것만으로도 중독을 일으킬 수 있습니다.</p>
 </div>
 </section>
+</main>
 
 <!-- footer -->
 <footer>
-    <!-- top button -->
-    <!-- <p class="top">
-        <button></button></p> -->
-    
+    <!-- top button -->        
     <div class="up_footer">
-        <ul>
-            <li>이용약관</li>
-            <li>개인정보처리방침</li>
-            <li>대리점 개설안내</li>
-            <li>서비스센터</li>
-        </ul>
-    </div>
-    
-    <div class="down_footer">
-    <div class="footer_info">
-    <dl>
-        <dt>사업자등록번호</dt>
-        <dd>215-86-93600</dd>
-    </dl>
-    
-    <dl>
-        <dt>통신판매업신고</dt>
-        <dd>2009-서울송파-0069호</dd>
-    </dl>
-    
-    <dl>
-        <dt>부가통신사업신고필증</dt>
-        <dd>021129</dd>
-    </dl>
-    
-    <dl>
-        <dt>고객센터 전화문의</dt>
-        <dd>1577-5670</dd>
-    </dl>
-    
-    <dl>
-        <dt>평일</dt>
-        <dd>9:30 ~ 17:30 (점심시간 12:30 ~ 13:30)</dd>
-    </dl>
-    
-    <dl>
-        <dt>토요일</dt>
-        <dd>9:30 ~ 12:30 (쇼핑몰 구매상담 제외)</dd>
-    </dl>
-    
-    <dl>
-        <dt>호스팅 서비스사업자</dt>
-        <dd>(주)일룸</dd>
-    </dl>
-    
-    <dl>
-        <dt>개인정보보호 책임자</dt>
-        <dd>강성문</dd>
-    </dl>
-    
-    <dl>
-        <dt>(주)일룸 주소</dt>
-        <dd>서울시 송파구 오금로 311 (오금동45-1) </dd>
-    </dl>
-    </div>
-    
-    <div class="sns_icon">
     <ul>
-        <li><a href="#">
-            <img src="/img/main/sns_icon01.png" alt="인스타그램"></a></li>
-        <li><a href="#">
-            <img src="/img/main/sns_icon02.png" alt="페이스북"></a></li>
-        <li><a href="#">
-            <img src="/img/main/sns_icon03.png" alt="네이버블로그"></a></li>
+        <li>이용약관</li>
+        <li>개인정보처리방침</li>
+        <li>대리점 개설안내</li>
+        <li>서비스센터</li>
     </ul>
     </div>
+            
+    <div class="down_footer">
+    <div class="footer_info">
+        <dl>
+            <dt>사업자등록번호</dt>
+            <dd>215-86-93600</dd>
+        </dl>
+            
+        <dl>
+            <dt>통신판매업신고</dt>
+            <dd>2009-서울송파-0069호</dd>
+        </dl>
+            
+        <dl>
+            <dt>부가통신사업신고필증</dt>
+            <dd>021129</dd>
+        </dl>
+            
+        <dl>
+            <dt>고객센터 전화문의</dt>
+            <dd>1577-5670</dd>
+        </dl>
+            
+        <dl>
+            <dt>평일</dt>
+            <dd>9:30 ~ 17:30 (점심시간 12:30 ~ 13:30)</dd>
+        </dl>
+            
+        <dl>
+            <dt>토요일</dt>
+            <dd>9:30 ~ 12:30 (쇼핑몰 구매상담 제외)</dd>
+        </dl>
+            
+        <dl>
+            <dt>호스팅 서비스사업자</dt>
+            <dd>(주)일룸</dd>
+        </dl>
+            
+        <dl>
+            <dt>개인정보보호 책임자</dt>
+            <dd>강성문</dd>
+        </dl>
+            
+        <dl>
+            <dt>(주)일룸 주소</dt>
+            <dd>서울시 송파구 오금로 311 (오금동45-1) </dd>
+        </dl>
+        </div>
+            
+    <div class="sns_icon">
+        <ul>
+            <li><a href="#">
+                <img src="/img/main/sns_icon01.png" alt="인스타그램"></a></li>
+            <li><a href="#">
+                <img src="/img/main/sns_icon02.png" alt="페이스북"></a></li>
+            <li><a href="#">
+                <img src="/img/main/sns_icon03.png" alt="네이버블로그"></a></li>
+        </ul>
     </div>
-    
+    </div>
+            
     <small>webmaster@iloom.com·Copyright (c) 2018 iloom lnc. All rights reserved</small>
     </footer>
     </div>
-</body>
-</html>
+    </body>
+    </html>

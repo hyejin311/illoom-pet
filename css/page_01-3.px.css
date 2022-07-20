@@ -95,9 +95,10 @@ ul.small_nav>li:first-child>a{
     border-right: 1px solid #fff;
 }
     
-nav.navbar,div.nav_btn{
-    display:none;
-}
+/* none */
+div.nav_btn{display:none;}
+nav{display:none;}
+p.close_btn{display:none;}
 
 div#top_btn{
     position:fixed;

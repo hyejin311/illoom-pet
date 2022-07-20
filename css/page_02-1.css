@@ -56,13 +56,10 @@ ul.small_nav>li:first-child>a{
     border-right: 1px solid #fff;
 }
 
-nav.navbar,div.nav_btn{
-    display:none;
-}
-
-ul.navbar_menu>div.nav_logo{
-    display:none;
-}
+/* none */
+div.nav_btn{display:none;}
+nav{display:none;}
+p.close_btn{display:none;}
 
 div#top_btn{
     position:fixed;
