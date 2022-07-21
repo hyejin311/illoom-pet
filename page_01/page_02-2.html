@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/4476cc0614.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/page_02-2.css">
-    <!-- <link rel="stylesheet" href="/css/page_02-2.media_query"> -->
+    <link rel="stylesheet" href="/css/page_02-2-media_query.css">
 </head>
 
 <body>
@@ -35,19 +35,19 @@
 
 <!-- nav.navbar -->
 <nav class="navbar">
-    <!-- ul.navbar_menu -->
-        <ul class="navbar_menu">
-    <div class="nav_logo">
-        <img src="/img/red_logo.png" alt="내비 로고">
-    </div>
-        <li><a href="#">
-            <i class="fa-solid fa-magnifying-glass"></i></a></li>
-        <li><a href="#">일룸 소개</a></li>
-        <li><a href="#">가구</a></li>
-        <li><a href="#">이벤트</a></li>
-        <li><a href="#">공지사항</a></li>
-        <li><a href="#">보도자료</a></li>
-    </ul>
+<!-- ul.navbar_menu -->
+<ul class="navbar_menu">
+<div class="nav_logo">
+    <img src="/img/red_logo.png" alt="내비 로고">
+</div>
+    <li><a href="#">
+        <i class="fa-solid fa-magnifying-glass"></i></a></li>
+    <li><a href="#">일룸 소개</a></li>
+    <li><a href="#">가구</a></li>
+    <li><a href="#">이벤트</a></li>
+    <li><a href="#">공지사항</a></li>
+    <li><a href="#">보도자료</a></li>
+</ul>
 
 <!-- p.close_btn -->
 <p class="close_btn">
@@ -62,42 +62,120 @@
 </div> 
 
 <main>
-<section id="content">
 <!-- content01 -->
-<div class="content01">
-<div>
-    <img src="/img/page_01-2/de_main.png" alt="상세 가구 이미지"></div>
+<section id="content01">
+<div class="l_img">
+    <img src="/img/page_01-2/title_img.png" alt="상세 가구 이미지"></div>
 
-<div>
+<div class="r_option">
 <dl>
     <dt>책장캣타워(1200폭 6단)_쿠션형(온라인몰 전용)</dt>
     <dd>499,000원</dd>
 </dl>
 
-<select name="colorOption" style="width: 200px;">
+<select name="color">
     <option value="color">[필수]색상을 선택해주세요</option>
     <option value="option">색상_bnb01</option></select>
 
-<select name="giftOption" style="width: 200px;">
+<select name="gift">
 <option value="gift">[선택]방석_기본형</option>
 <option value="option">옵션_기본_방석형</option></select>
+
+<p class="price">
+    <span>총 구매가</span>
+    <span>원</span>
+</p>
 
 <p class="button">
     <button>장바구니</button>
     <button>구매하기</button>
 </p>
 </div>
-</div>
+</section>
 
 <!-- content02 -->
-<div class="content02">
-    <img src="/img/page_01-2/de_info.png" alt="상품 상세설명">
-</div>>
+<section id="content02">
+    <h2>상품필수정보</h2>
+
+    <div>
+    <dl>
+        <dt>제품명</dt>
+        <dd>가구</dd>
+    </dl>
+
+    <dl>
+        <dt>모델명</dt>
+        <dd>책장캣타워(1200폭_6단)_쿠션형(온라인몰 전용)
+        </dd>
+    </dl>
+
+    <dl>
+        <dt>크기(mm) /중량(kg)</dt>
+        <dd>*상세페이지 참조</dd>
+    </dl>
+
+    <dl>
+        <dt>색상</dt>
+        <dd>NCCGYM/</dd>
+    </dl>
+
+    <dl>
+        <dt>구성품</dt>
+        <dd>*상세페이지 참조</dd>
+    </dl>
+
+    <dl>
+        <dt>주요소재/재질</dt>
+        <dd>*상세페이지 참조</dd>
+    </dl>
+
+    <dl>
+        <dt>사용연령 또는 체중범위</dt>
+        <dd>해당사항 없음</dd>
+    </dl>
+
+    <dl>
+        <dt>동일모델의 출시년월</dt>
+        <dd>해당사항 없음</dd>
+    </dl>
+
+    <dl>
+        <dt>제조자/제조국</dt>
+        <dd>일룸 OEM/대한민국</dd>
+    </dl>
+
+    <dl>
+        <dt>판매자/수입자</dt>
+        <dd>(주)일룸/-</dd>
+    </dl>
+
+    <dl>
+        <dt>취급방법 및 취급시 주의사항 / 안전표시(주의,경고 등)</dt>
+        <dd>*상세페이지 참조</dd>
+    </dl>
+
+    <dl>
+        <dt>배송/설치비용</dt>
+        <dd>무료배송(단, 도서산간지역 제외)</dd>
+    </dl>
+
+    <dl>
+        <dt>품질보증기준</dt>
+        <dd>소비자분쟁해결기준에 따라 1년 무상 A/S <br />
+        (단, 보증기간 내라도 고객 귀책 사유일 경우 제외)</dd>
+    </dl>
+
+    <dl>
+        <dt>AS/책임자와 전화번호</dt>
+        <dd>일룸 고객센터 1577-5670</dd>
+    </dl>
+</div>
+</section>
 
 <!-- content03 -->
-<div class="content03">
+<section id="content03">
     <figure>
-        <img src="/img/page_01-2/de_full.png" alt="가구이미지 풀샷">
+        <img src="/img/page_01-2/full_img.png" alt="가구이미지 풀샷">
     <figcaption>
         <dl>
             <dt>책장 캣타워(1200폭 6단)_쿠션형</dt>
@@ -106,94 +184,140 @@
         </dl>
     </figcaption>
 </figure>
-</div>
+</section>
 
 <!-- content04 -->
-<div class="content04">
-    <img src="/img/page_01-2/de_detail.png" alt="가구 디테일 사진">
-</div>
-
-<!-- content05 -->
-<div class="content05">
+<section id="content04">
+<div class="img_box01">
 <ul>
-    <li class="d1">
-        <figure>
-            <img src="/img/page_01-2/d1.png" alt="1">
-            <img src="/img/page_01-2/d2.png" alt="2">
-        <figcaption>
-            <dl>
-                <dt>01 안전하게 오르락 내리락 할 수 있는 튼튼한 선반 </dt>
-                <dd>편안하게 오르내릴 수 있는 사이즈, 모서리 하나하나 라운드로
-                냥이가 안전하게 사용할 수 있게 세심하게 디자인하였습니다. 
-                22T의 두터운 선반, 냥이들이 뛰어다녀도 끄떡 없어요!</dd>
-            </dl>
-        </figcaption>
-    </figure>
+    <li>
+        <img src="/img/page_01-2/detail_img.png" alt="가구 디테일 사진">
+    </li>
+
+<li>
+    <figure>
+        <img src="/img/page_01-2/d12.png" alt="1,2">
+    <figcaption>
+        <dl>
+            <dt>01 안전하게 오르락 내리락 할 수 있는 튼튼한 선반 </dt>
+            <dd>편안하게 오르내릴 수 있는 사이즈, 모서리 하나하나 라운드로 냥이가 안전하게 사용할 수 있게 세심하게 디자인하였습니다. 
+            22T의 두터운 선반, 냥이들이 뛰어다녀도 끄떡 없어요!</dd>
+        </dl>
+    </figcaption>
+</figure>
 </li>
 
-    <li class="d3">
-        <figure>
-            <img src="/img/page_01-2/d34.png" alt="3,4">
-        <figcaption>
-            <dl>
-                <dt>02 시야를 확보해 안정감을 주는 오픈형 구조 </dt>
-                <dd>자연스러운 나뭇결이 드러나는 원목 봉이 선반을 잡아주는 개방감 있는 구조로 냥이들의 시야를 확보해 주어 안정감을 느끼게 해주고 공간은 넓어 보이는 효과를 줍니다.
-                또한 앞뒤의 구분이 없는 디자인으로 공간에 따라 벽에 붙이거나 공간을 분할하는 파티션처럼 사용할 수도 있습니다.</dd>
-            </dl>
-        </figcaption>
-    </figure>
+<li>
+    <figure>
+        <img src="/img/page_01-2/d34.png" alt="3,4">
+    <figcaption>
+        <dl>
+            <dt>02 시야를 확보해 안정감을 주는 오픈형 구조 </dt>
+            <dd>자연스러운 나뭇결이 드러나는 원목 봉이 선반을 잡아주는 개방감 있는 구조로 냥이들의 시야를 확보해 주어 안정감을 느끼게 해주고 공간은 넓어 보이는 효과를 줍니다.
+            또한 앞뒤의 구분이 없는 디자인으로 공간에 따라 벽에 붙이거나 공간을 분할하는 파티션처럼 사용할 수도 있습니다.</dd>
+        </dl>
+    </figcaption>
+</figure>
 </li>
 
-    <li class="d5">
-        <figure>
-            <img src="/img/page_01-2/d56.png" alt="5,6">
-        <figcaption>
-            <dl>
-                <dt>03 방향성 없이 사용 가능한 디자인</dt>
-                <dd>지그재그로 디자인 된 그레이 컬러의 측판은
-                목봉과 함께 캣타워의 구조를 안정적으로 지지해주는 역할을 합니다. 살포시 책을 놓으면 북엔드로도 효과 만점!</dd>
-            </dl>
-        </figcaption>
-    </figure>
+<li>
+    <figure>
+        <img src="/img/page_01-2/d56.png" alt="5,6">
+    <figcaption>
+        <dl>
+            <dt>03 방향성 없이 사용 가능한 디자인</dt>
+            <dd>지그재그로 디자인 된 그레이 컬러의 측판은
+            목봉과 함께 캣타워의 구조를 안정적으로 지지해주는 역할을 합니다. 살포시 책을 놓으면 북엔드로도 효과 만점!</dd>
+        </dl>
+    </figcaption>
+</figure>
 </li>
 
-    <li class="d7">
-        <figure>
-            <img src="/img/page_01-2/d78.png" alt="7,8">
-        <figcaption>
-            <dl>
-                <dt>04 캣타워 속 아늑한 공간, 숨숨집</dt>
-                <dd>책장 캣타워 하부에는 냥이들이 혼자만의 시간을 보낼 수 있는 숨숨집도 마련되어 있어요. 숨숨집은 책장 캣타워의 구조를 안전하게 지지해 주는 큰 임무도 수행하고 있답니다.</dd>
-            </dl>
-        </figcaption>
-    </figure>
+<li>
+    <figure>
+        <img src="/img/page_01-2/d78.png" alt="7,8">
+    <figcaption>
+        <dl>
+            <dt>04 캣타워 속 아늑한 공간, 숨숨집</dt>
+            <dd>책장 캣타워 하부에는 냥이들이 혼자만의 시간을 보낼 수 있는 숨숨집도 마련되어 있어요. 숨숨집은 책장 캣타워의 구조를 안전하게 지지해 주는 큰 임무도 수행하고 있답니다.</dd>
+        </dl>
+    </figcaption>
+</figure>
 </li>
 
-    <li class="d9">
-        <figure>
-            <img src="/img/page_01-2/d910.png" alt="9,10">
-        <figcaption>
-            <dl>
-                <dt>05 냥이의 편안한 휴식을 도와주는 숨숨집 방석 </dt>
-                <dd>캣타워에는 숨숨집에 함께 사용할 수 있는 네모난 방석 1개가 기본으로 포함되어 있습니다. 모든 숨숨집을 아늑한 공간으로 만들어주고 싶다면 방석을 추가로 구입해주세요. </dd>
-            </dl>
-        </figcaption>
-    </figure>
+<li>
+    <figure>
+        <img src="/img/page_01-2/d910.png" alt="9,10">
+    <figcaption>
+        <dl>
+            <dt>05 냥이의 편안한 휴식을 도와주는 숨숨집 방석 </dt>
+            <dd>캣타워에는 숨숨집에 함께 사용할 수 있는 네모난 방석 1개가 기본으로 포함되어 있습니다. 모든 숨숨집을 아늑한 공간으로 만들어주고 싶다면 방석을 추가로 구입해주세요. </dd>
+        </dl>
+    </figcaption>
+</figure>
 </li>
 
-    <li class="d11">
-        <figure>
-            <img src="/img/page_01-2/d11.png" alt="11">
-        <figcaption>
-            <dl>
-                <dt>06 스트레스 해소와 스크래칭을 위한 스크래쳐 </dt>
-                <dd>캣타워에는 숨숨집에 함께 사용할 수 있는 네모난 방석 1개가 기본으로 포함되어 있습니다. 모든 숨숨집을 아늑한 공간으로 만들어주고 싶다면 방석을 추가로 구입해주세요. </dd>
-            </dl>
-        </figcaption>
-    </figure>
+<li class="d11">
+    <figure>
+        <img src="/img/page_01-2/d_11.png" alt="11">
+    <figcaption>
+        <dl>
+            <dt>06 스트레스 해소와 스크래칭을 위한 스크래쳐 </dt>
+            <dd>캣타워에는 숨숨집에 함께 사용할 수 있는 네모난 방석 1개가 기본으로 포함되어 있습니다. 모든 숨숨집을 아늑한 공간으로 만들어주고 싶다면 방석을 추가로 구입해주세요. </dd>
+        </dl>
+    </figcaption>
+</figure>
 </li>
 </ul>
+</div>
 
+<div class="img_box02">
+    <h3>Color</h3>
+    <div>
+    <img src="/img/page_01-2/img_box02_1.png" alt="컬러사진1">
+    <img src="/img/page_01-2/img_box02_2.png" alt="컬러사진2">
+    <p>* 제품 색상은 모니터에 따라 실제 색상과 차이가 있을 수 있습니다.</p>
+</div>
+</div>
+
+<div class="img_box03">
+    <h3>Size & Materials</h3>
+<div>
+    <img src="/img/page_01-2/img_box03_1.png" alt="제품 사이즈 설명 사진">
+    </div>
+
+<div>
+    <dl>
+        <dt>Size</dt>
+        <dd>책장캣타워 1200*4340*1721</dd>
+        <dd>방석_책장캣타워 선반용 370*315</dd>
+        <dd>방석_기본형 370*354</dd>
+    </dl>
+
+    <dl>
+        <dt>Materials</dt>
+        <span>선반</span> <span>22T PB+LPM</span> <br />
+        <span>측판</span> <span>15T PB +LPM</span> <br />
+        <span>목봉</span> <span>원목(애쉬) + 도장</span> <br />
+        <span>숨숨집</span> <span>15T PB+LPM</span> <br />
+        <span>방석</span> <span>스폰지 + 패브릭(Polyester)</span> <br />
+        <span>*제품의 사양은 변경될 수 있습니다.</span>
+    </dl>
+</div>
+</div>
+
+<div class="img_box04">
+   <div>
+    <h3>ECO FRIENDLY</h3>
+    <p>브랜드 가구 최초, E0목재 전면 사용</p>
+
+    <span>일룸은 2011년 업계 최초로 포름알데히드 방출량이<br />
+    E1보다 최대 5배 낮은 E0목재를 모든 제품에 도입하였습니다.</span>
+   </div>
+
+   <div>
+    <img src="/img/page_01-2/img_box04_1.jpg" alt="친환경 목재 설명사진">
+   </div>
 </div>
 </section>
 </main>
@@ -270,8 +394,8 @@
     </div>
     </div>
         
-    <small>webmaster@iloom.com·Copyright (c) 2018 iloom lnc. All rights reserved</small>
-    </footer>
-    </div>
-    </body>
-    </html>
+<small>webmaster@iloom.com·Copyright (c) 2018 iloom lnc. All rights reserved</small>
+</footer>
+</div>
+</body>
+</html>
