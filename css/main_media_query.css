@@ -21,8 +21,6 @@ section#content02{
     width:1200px;}
 section#content04{
     width:1200px;}
-section#content04>div.video_img{
-    justify-content: space-evenly;}
 section#content05{
     width:1200px;}
 div.down_footer>div.footer_info{
@@ -31,7 +29,7 @@ div.down_footer>div.footer_info{
 
 @media screen and (max-width:1199px) and (min-width:980px){
 #content02>div#test_pic>figure.pic03>img.pic03_1,img.pic03_2{
-    width:45%;
+    width:49%;
 }
 }
 
@@ -138,7 +136,7 @@ section#content01>article{
 
 #content01>div#left{
     display:flex;
-    z-index: 999;
+    z-index: 400;
     position:absolute;
     width:30px;
     background-color: rgb(250, 249, 245);
@@ -157,7 +155,7 @@ p.prev,p.next{
 
 /* #content02 */
 section#content02>div#test_pic{
-text-align: center;
+/* text-align: center; */
 width: 100%;
 }
 
@@ -180,10 +178,11 @@ section#content02>div#test_pic>figure.pic02{
 section#content02>div#test_pic>figure.pic03{
     width:100%;
     margin-bottom:0;
+    text-align: center;
 }
 
 section#content02>div#test_pic>figure.pic03 img{
-    width:30%;
+    width:32%;
 }
 
 #content02>div#test_pic>figure.pic03>img.pic03_1,img.pic03_2{
@@ -193,8 +192,10 @@ section#content02>div#test_pic>figure.pic03 img{
 /* #content03 */
 #content03>ul.we_illom>li{
     width:45%;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom:30px;
+    padding:0 30px;
+    box-sizing: border-box;
 }
 
 #content03>ul.illomlife li figure{
@@ -374,8 +375,7 @@ div.nav_btn{
 }
     
 nav.navbar{
-    /* display:flex; */
-    display:none;
+    display:flex;
     position: fixed;
     justify-content: center;
     width: 100%; height: 100%;
@@ -386,8 +386,8 @@ nav.navbar{
 }
     
 nav.navbar>ul.navbar_menu{
-    width:70vw;
-    height: 80vh;
+    width:80vw;
+    height: 100vh;
     padding-top:80px;
     box-sizing: border-box;
     background-color: #fff;
@@ -395,7 +395,7 @@ nav.navbar>ul.navbar_menu{
 }
     
 nav.navbar>ul.navbar_menu>div.navbar_logo{
-    display:block;
+    display:flex;
     margin-bottom:30px;
 }
 
@@ -407,15 +407,14 @@ nav.navbar>ul>li{
     width:70%;
     border-bottom:2px solid rgba(172, 133, 92, 0.9);
     margin:0 auto;
-    line-height: 70px;
+    line-height: 4;
 } 
 
-/* section#content01{
-    width:100%;
-    height: 100vh;
-    cursor: pointer;
-    position: relative;
-} */
+ul.navbar_menu>li>a{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgba(172, 133, 92, 0.9);
+}
 
 section#content01>article{
     padding:0;
@@ -424,9 +423,11 @@ section#content01>article{
 #content01>div#left{
     display:flex;
     z-index: 400;
-    position:fixed;
+    /* position:fixed; */
     width:30px;
-    background-color: transparent;
+    padding-top:50px;
+    box-sizing: border-box;
+    background-color: rgb(250, 249, 245);
 }
 
 #content01>div#left>p{
@@ -556,12 +557,14 @@ ul.we_illom>li>figure>figcaption>img{
 ul.we_illom>li>figure>figcaption>dl{
     width: 60%;
     margin:0 auto;
+    font-size: 20px;
+    line-height: 60px;
     padding-left: 20px;
     box-sizing: border-box;
 }
 
 ul.we_illom>li>figure>figcaption>dl>dd{
-    height: 33%;
+    line-height:50px;
 }
 
 /* content04 */

@@ -280,7 +280,6 @@ div.sns_icon ul li:last-child{
     }
     
     ul.list{
-        margin:50px 0;
         width: 100%;
         padding:20px 0;
         box-sizing: border-box;
@@ -310,10 +309,7 @@ div.sns_icon ul li:last-child{
 
     div.desc>div{
         width: 100%;
-    }
-
-    div.desc>div#left{
-        margin-bottom:50px;
+        margin-bottom:30px;
     }
 
     div.desc dl>dt{

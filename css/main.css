@@ -73,7 +73,7 @@ box-sizing: border-box;
 ul.small_nav>li>a:hover{
     cursor: pointer;
 }
-    
+
 ul.small_nav>li:first-child>a{
     border-right: 1px solid #fff;
 }
@@ -420,7 +420,7 @@ margin-bottom:60px;
 #content04>div.video_img{
 width: 100%;
 display:flex;
-justify-content: space-between;    
+justify-content: space-evenly;  
 }
 
 #content04>div.video_img>p{

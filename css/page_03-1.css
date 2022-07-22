@@ -103,7 +103,7 @@ section#content01>h2{
 /* section#content02 */
 section#content02{
     width:98%; /* 1200px */
-    margin:100px 0;
+    margin:100px auto;
     box-sizing: border-box;
     position:relative;
 }

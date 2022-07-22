@@ -9,8 +9,7 @@
     div.down_footer>div.footer_info{width: 1200px;}
 }
 
-@media screen and (max-width:1199px) and (min-width:980px){
-    
+@media screen and (max-width:1199px) and (min-width:980px){   
 }
 
 /* tablet */
@@ -80,7 +79,7 @@ nav.navbar>ul.navbar_menu>li>a:hover{
     border-radius: 100%;
 }
 
-nav.navbar>ul.close_btn{
+nav.navbar>p.close_btn{
     display:block;
     position:absolute;
     top:5%; right:3%;
@@ -121,7 +120,6 @@ ul.option{
 
 div#filter>ul.pricefilter{
     width: 200px;
-    height: 50%;
 }
 
 div#filter>ul.pricefilter>li>a{
@@ -233,7 +231,7 @@ div.nav_btn{
 }
 
 nav.navbar{
-    /* display:flex; */
+    display:flex;
     position: fixed;
     justify-content: center;
     width: 100%; height: 100%;
