@@ -30,6 +30,12 @@ header{
     align-items: center;
 }
 
+header>h1{
+    font-family: 'La Belle Aurore', cursive;
+    color:#fff;
+    font-size: 30px;
+}
+
 /* ul.small_nav */
 ul.small_nav{
     display:flex;

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @media screen and (min-width:1440px){
     main{width: 1440px;}
+    header{width:1440px;}
     section#content02{width: 1440px;}
     div.down_footer>div.footer_info{width: 1200px;}
 }

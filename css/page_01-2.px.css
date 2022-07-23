@@ -93,6 +93,12 @@ header{
     align-items: center;
 }
 
+header>h1{
+    color:#fff;
+    font-size: 25px;
+    font-family: 'La Belle Aurore', cursive;
+}
+
 /* ul.small_nav */
 ul.small_nav{
     display:flex;
@@ -161,7 +167,7 @@ section#content01>dl{
     position:absolute;
     display:flex;
     justify-content: center;
-    padding-top:100px;
+    padding-top:200px;
     box-sizing: border-box;
     color:#fff;
     text-shadow:2px 2px 3px rgba(172, 133, 92, 0.9);

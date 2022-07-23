@@ -23,6 +23,12 @@ header{
     align-items: center;
 }
 
+header>h1{
+    color:#fff;
+    font-size: 25px;
+    font-family: 'La Belle Aurore', cursive;
+}
+
 /* ul.small_nav */
 ul.small_nav{
     display:flex;
@@ -85,7 +91,7 @@ section#content01>h2{
     position:absolute;
     width:100%;
     text-align: center;
-    padding-top:100px;
+    padding-top:200px;
     font-size:4em;
     font-weight: bold;
     text-align: center;

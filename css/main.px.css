@@ -51,6 +51,12 @@ header{
     align-items: center;
 }
 
+header>h1{
+    color:#fff;
+    font-size: 25px;
+    font-family: 'La Belle Aurore', cursive;
+}
+
 /* ul.small_nav */
 ul.small_nav{
     display:flex;
