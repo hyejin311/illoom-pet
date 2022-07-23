@@ -79,10 +79,10 @@ div#top_btn>a{
 
 /* section#content01 */
 section#content01{
-    width:100% /* 1440px */;
+    width:100%;
     height: 100vh; /* 800px; */
     cursor: pointer;
-    /* background:url('/img/page_01-1/main02_img.png') no-repeat center top; */
+    background: url('/img/page_01-4/main_img.png') no-repeat center top;
     position: relative;
 }
 
@@ -99,46 +99,36 @@ section#content01>h2{
 }
 
 /* section#content02 */
-section#content02{
+main{
     width:98%; /* 1400px; */
     margin:0 auto;
     position:relative;
     padding:60px 0;
+    text-align: center;
 }
 
-section#content02>div.info_title{
-    width:100%;
+section#content02>div.title{
     padding:28px 0;
+    box-sizing: border-box;
+    font-size: 18px;
     border-top: 1px solid #333; 
     border-bottom: 1px solid #333; 
 }
 
-section#content02>div.info_title>p{
-    text-align: center;
+section#content02>div.info{
+    margin:100px auto 150px;
+}
+
+section#content02>div.info>p.date{
+    margin-bottom:30px;
     font-weight: bold;
-    font-size: 1.2em;
-}
-
-section#content02>div.info_content{
-    width:1000px;
-    margin:0 auto;
-    padding: 50px 0;
-}
-
-section#content02>div.info_content>div.right{
-    width:100%; height: 40px;
     text-align: right;
 }
 
-div.right>span{
-font-weight: bold;
-}
-
-div.info_content>p{
-    line-height: 5;
-    width:100%; height: 700px;
-    box-sizing: border-box;
-    text-align: center;
+section#content02>div.info>p.info_content{
+    width:80%;
+    margin:0 auto;
+    line-height:3;
 }
 
 /* footer */

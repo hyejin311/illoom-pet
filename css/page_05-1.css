@@ -79,10 +79,10 @@ div#top_btn>a{
 
 /* section#content01 */
 section#content01{
-    width:100% /* 1440px */;
+    width:100%;
     height: 100vh; /* 800px; */
     cursor: pointer;
-    /* background:url('/img/page_01-1/main02_img.png') no-repeat center top; */
+    background:url('/img/page_01-5/main_img.png') no-repeat center top;
     position: relative;
 }
 
@@ -99,51 +99,49 @@ section#content01>h2{
 }
 
 /* section#content02 */
-section#content02{
+main{
     width: 98%; /* 1440px; */
     margin:100px auto;
     position:relative;
 }
 
-section#content02>div#bodo{
-    display: flex;
-    flex-wrap: nowrap;
-    width:100%; height:100%;
-    position:relative;
-}
-
-/* 해결해야함 */
 div#bodo>ul{
     display: flex;
     flex-wrap: wrap;
-    width:100%; height: 100%;
+    width: 80%;
+    margin:0 auto;
     justify-content: space-between;
 }
 
-ul>li>figure{
+div#bodo>ul>li{
+    width: 30%;
+}
+
+div#bodo>ul>li>figure{
 margin-bottom:110px;
 }
 
 ul>li>figure>figcaption{
-    height: 190px;
     background-color: #fff;
 }
 
 ul>li>figure>figcaption>dl{
-    width: 100%; height: 90%;
-    margin:0 auto;
+padding:50px 0;
+box-sizing: border-box;
 }
 
 ul>li>figure>figcaption>dl>dt{
-font-weight: bold;
-font-size: 1.5em;
-text-align: center;
-line-height: 1.2;
-height: 80%;
+    font-weight: bold;
+    font-size: 1.2em;
+    height: 60px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom:30px;
 }
 
 ul>li>figure>figcaption>dl>dd{
     text-align: right;
+    padding-right: 20px;
     color:rgba(172, 133, 92, 1);
 }
 

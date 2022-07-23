@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* 1440 */
+@media screen and (min-width:1440px) {
+    main{width:1200px;}
+    header{width:1440px;}
+    div.down_footer>div.footer_info{width:1200px;}
+}
+
+/* 1200 */
+@media screen and (max-width:1439px) and (min-width:1200px){
+    main{width: 1200px;}
+    div.down_footer>div.footer_info{width:1200px;}
+}
+
+@media screen and (max-width:1199px) and (min-width:980px){}
+
+/* tablet */
+@media screen and (max-width:979px) and (min-width:580px){
+
+}
+
+/* mobile */
+@media screen and (max-width:579px) and (min-width:350px){
+
+}

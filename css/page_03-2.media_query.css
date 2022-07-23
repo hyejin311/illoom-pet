@@ -169,7 +169,7 @@ div.down_footer>div.footer_info{
 div.footer_info dl{
     width:100%;
     font-size: 1em;
-    height: 4vh;
+    margin:20px 10px;
 }
 
 div.footer_info>dl dt{
@@ -207,9 +207,13 @@ div.sns_icon ul li:last-child{
         justify-content: space-around;
     }
     
+    header>h1>a>img{
+        width:50%;
+    }
+    
     ul.small_nav{
         position:absolute;
-        top:auto; left:45%;
+        left:35%;
     }
     
     ul.small_nav>li>a{

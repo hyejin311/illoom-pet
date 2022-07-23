@@ -3,6 +3,15 @@ img{max-width: 100%;}
 
 div#wrap{    
     background-color: rgba(250, 249, 245, 1);
+    width:100%;
+}
+
+/* main */
+main{
+    width: 98%; /* 1200px; */
+    margin:0 auto;
+    padding:20px 0;
+    box-sizing: border-box;
 }
 
 /* div#header */
@@ -80,8 +89,9 @@ section#content01{
     width:100% /* 1440px */;
     height: 100vh; /* 800px; */
     cursor: pointer;
-    /* background:url('/img/page_01-1/main02_img.png') no-repeat center top; */
-    position: relative;}
+    background: url('/img/page_01-4/main_img.png') no-repeat center top;
+    position: relative;
+}
 
 section#content01>h2{
     position:absolute;
@@ -95,59 +105,65 @@ section#content01>h2{
     text-shadow:2px 2px 3px rgba(172, 133, 92, 0.9);
 }
 
-/* section#content02 */
-section#content02{
-    width:98%; /* 1440px; */
-    margin:0 auto;
-    position:relative;
-    margin-bottom:100px;
+table{
+    width:100%;
+    margin:50px 0;
 }
 
-section#content02>table.Info>thead{
-    height: 30px;
+section#content02>table>thead{
+    line-height: 70px;
     border-bottom: 1px solid #333;
 }
 
-thead>tr.title>th{
+thead>tr.table_head>th{
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color:rgb(172, 133, 92);
 }
 
-tbody{
-    width: 1400px;
+table>tbody{
+    width: 100%;
     margin:0 auto;
     position:relative;
+    text-align: center;
 }
 
-section#content02>table.Info>tbody>tr{
-
+table>tbody>tr>td{
+    cursor:pointer;
+    padding:30px 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    border-bottom:1px solid #333;
 }
 
-section#content02>table.Info>tbody>tr>td{
-padding:30px 0;
-border-bottom:1px solid rgba(51, 51, 51, 0.42);
-font-weight:bold;
+table>tbody>tr>td:hover{
+    text-decoration: underline;
 }
 
 /* section#content02>div */
 section#content02>div.page_btn{
-        width:70px;
-        display:flex;
-        margin:0 auto;
-        padding:20px 0;
+    display:flex;
+    justify-content: center;
+    padding:30px 0;
+    box-sizing: border-box;
+    margin-bottom:50px;
 }
 
 section#content02>div.page_btn>p{
     margin-right: 25px;
-    width:50px; height: 40px;
+}
+
+section#content02>div.page_btn>p>button:hover{
+    color:#fff;
 }
 
 section#content02>div.page_btn>p>button{
-    width: 30px; height: 30px;
     border-radius: 100%;
+    cursor: pointer;
+    margin:0 10px;
     border-color: rgba(172, 133, 92);
     background-color: rgba(172, 133, 92);
+    width: 40px; height: 40px;
 }
 
 /* footer */

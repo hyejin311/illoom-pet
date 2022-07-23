@@ -83,7 +83,7 @@ section#content01{
     width:100% /* 1440px */;
     height: 100vh; /* 800px; */
     cursor: pointer;
-    /* background:url('/img/page_01-1/main02_img.png') no-repeat center top; */
+    background: url('/img/page_01-5/main_img.png') no-repeat center top;
     position: relative;
 }
 
