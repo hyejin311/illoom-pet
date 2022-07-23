@@ -33,7 +33,8 @@ ul.small_nav{
 }
 
 nav.navbar{
-    display:flex;
+    /* display:flex; */
+    display:none;
     position: fixed;
     justify-content: center;
     width: 50vw; height: 100%;
@@ -215,7 +216,8 @@ div.nav_btn{
 }
     
 nav.navbar{
-    display:flex;
+    /* display:flex; */
+    display:none;
     position: fixed;
     justify-content: center;
     width: 100%; height: 100%;

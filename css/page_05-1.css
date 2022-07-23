@@ -108,13 +108,14 @@ main{
 div#bodo>ul{
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     margin:0 auto;
     justify-content: space-between;
 }
 
 div#bodo>ul>li{
     width: 30%;
+    cursor: pointer;
 }
 
 div#bodo>ul>li>figure{

@@ -1,15 +1,17 @@
 @charset "UTF-8";
 /* 1440 */
-@media screen and (min-width:1440px) {
-main{width: 1200px;}
+@media screen and (min-width:1440px){
 header{width:1440px;}
-div.down_footer>div.footer_info{width: 1200px;}
+main{width:1200px;}
+div.bodo_content{width: 1200px;}
+div.down_footer>div.footer_info{width:1200px;}
 }
 
 /* 1200 */
 @media screen and (max-width:1439px) and (min-width:1200px){
-main{width:1200px;}
-div.down_footer>div.footer_info{width: 1200px;}
+    main{width:1200px;}
+    div.bodo_content{width: 1200px;}
+    div.down_footer>div.footer_info{width:1200px;}
 }
 
 @media screen and (max-width:1199px) and (min-width:980px){}
@@ -109,16 +111,21 @@ div.down_footer>div.footer_info{width: 1200px;}
         margin-top:70px;
     }
 
-    section#content02>div.info>p.info_content{
-        width: 98%;
-        margin:0 auto;
+    section#content02>div.title>p{
+        font-size: 1.2em;
     }
 
-    section#content02>div.info{
-        margin:80px auto;
+    div.bodo_content>p{
+        padding:0 20px;
+        box-sizing: border-box;
     }
 
-/* footer */
+    /*div.bodo_content */
+    div.bodo_content{
+    margin:50px auto 100px;
+}
+
+    /* footer */
 footer>div.down_footer{
     padding: 10px 0;
     box-sizing: border-box;
@@ -161,11 +168,12 @@ div.down_footer>div.sns_icon ul{
 div.sns_icon ul li:last-child{
     margin-right: 0;
 }
+
 }
 
 /* mobile */
 @media screen and (max-width:579px) and (min-width:350px){
-/* header */
+    /* header */
 div#header{
     position:fixed;
     z-index: 999;
@@ -269,20 +277,19 @@ section#content01{
     margin-top:70px;
 }
 
-section#content02>div.info{
-    margin:70px auto;
-}
+section#content02>div.title>p{
+    font-size: 1.5em;
+    line-height: 50px;
+    padding:50px 0;
+    box-sizing: border-box;
+    }
 
-section#content02>div.info>p.date{
-    margin-bottom:50px;
-}
+    div.bodo_content>p{
+    line-height: 50px;
+    font-size: 18px;
+    }
 
-section#content02>div.info>p.info_content{
-    width:100%;
-    font-size: 14px;
-}
-
-/* footer */
+    /* footer */
 div.up_footer>ul>li{
     padding:0 10px;
     font-size: 12px;
@@ -338,4 +345,5 @@ margin:0 auto;
 line-height:1.5;
 font-size:14px;
 }
+
 }
