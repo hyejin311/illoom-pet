@@ -52,7 +52,7 @@ header{
     align-items: center;
 }
 
-header>h1{
+header>h1>a{
     color:#fff;
     font-size: 25px;
     font-family: 'La Belle Aurore', cursive;
@@ -149,7 +149,7 @@ section#content01>article{
 /* div#prev 버튼 */
 p.prev{
     position:absolute;
-    left: 10%; top:40%;
+    left: 0; top:40%;
     font-size:30px;
     color:#fff;
     cursor: pointer;
@@ -158,7 +158,7 @@ p.prev{
 /* div#next 버튼 */
 p.next{
     position:absolute;
-    right: 10%; top:40%;
+    right: 0; top:40%;
     font-size:30px;
     color:#fff;
     cursor: pointer;

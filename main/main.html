@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>일룸 pet 메인페이지 포기는 김치담궈라</title>
     <script src="https://kit.fontawesome.com/4476cc0614.js" crossorigin="anonymous"></script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Ms+Madi&family=Orelega+One&family=Staatliches&display=swap');
@@ -413,4 +415,45 @@
 </footer>
 </div>
 </body>
+
+
+<!-- script -->
+<script>
+    $(function(){
+    //top버튼
+    $('#top_btn').click(function(e){
+        $('html','body').animate({scrollTop:0},1000);
+    });
+
+    let Liwidth = $('div.gall>ul>li').width();
+    console.log(Liwidth);
+
+    $('div.gall>ul>li:first').appendTo('div.gall>ul');
+    $('div.gall>ul').css('margin-left','-='+Liwidth+'px');
+    
+    //next
+    $('p.next').click(function(e){
+        $('div.gall>ul').stop().animate({marginLeft:'-='+Liwidth+'px'},700,function(e){
+        $('div.gall>li:first').appendTo('div.gall>ul');
+        $('div.gall>ul').css('margin-left','-'+Liwidth+'px');
+        });
+    });
+
+    //prev
+    $('p.prev').click(function(e){
+        $('div.gall>ul').stop().animate({marginLeft:'-='+Liwidth+'px'},700,function(e){
+            $('div.gall>li:last').prependTo('div.gall>ul');
+        $('div.gall>ul').css('margin-left','+'+Liwidth+'px');
+        });
+    });
+
+
+    $('#content04>div.video_img>div>p').click(function(e){
+        $('div.video_img>ul>li>img:first').appendTo('div.video_img>ul');
+        $('div.video_img ul').css('margin-left','-','238px');
+    });
+});
+    
+    //prev
+</script>
 </html>
