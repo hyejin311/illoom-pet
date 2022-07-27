@@ -109,7 +109,6 @@ main{
 }
 
 section#content02>div.title{
-    height: 80px;
     border-top: 1px solid #333;
     border-bottom: 1px solid #333;
 }
@@ -123,6 +122,17 @@ text-align: center;
 }
 
 /*div.bodo_content */
+div.bodo_content{
+    width: 98%; /* 1200px */
+    margin:100px auto;
+    text-align: center;
+}
+
+div.bodo_content>p{
+    margin:50px 0;
+    line-height: 40px;
+    }
+
 section#content02>div.bodo_content{
     position:relative;
     padding:90px 0;

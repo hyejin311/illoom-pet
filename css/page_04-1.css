@@ -153,17 +153,16 @@ section#content02>div.page_btn>p{
     margin-right: 25px;
 }
 
-section#content02>div.page_btn>p>button:hover{
-    color:#fff;
-}
-
 section#content02>div.page_btn>p>button{
-    border-radius: 100%;
     cursor: pointer;
     margin:0 10px;
-    border-color: rgba(172, 133, 92);
-    background-color: rgba(172, 133, 92);
     width: 40px; height: 40px;
+    background-color: #fff;
+    border-color: rgba(192, 192, 192, 0.9);
+}
+
+section#content02>div.page_btn>p>button:hover{
+    background-color: rgba(212, 212, 212, 0.4);
 }
 
 /* footer */

@@ -1,21 +1,20 @@
 @charset "UTF-8";
-/* 1440 */
+
 @media screen and (min-width:1440px) {
-main{width: 1200px;}
-header{width:1440px;}
-div.down_footer>div.footer_info{width: 1200px;}
+    header{width: 1440px;}
+    main{width:1200px;}
+    div.down_footer>div.footer_info{width:1200px;}
 }
 
-/* 1200 */
-@media screen and (max-width:1439px) and (min-width:1200px){
-main{width:1200px;}
-div.down_footer>div.footer_info{width: 1200px;}
+@media screen and (max-width:1439px) and (min-width:1200px) {
+    main{width:1200px;}
+    div.down_footer>div.footer_info{width:1200px;}
 }
 
-@media screen and (max-width:1199px) and (min-width:980px){}
+@media screen and (max-width:1199px) and (min-width:980px) {}
 
 /* tablet */
-@media screen and (max-width:979px) and (min-width:580px){
+@media screen and (max-width:979px) and (min-width:580px) {
     div#header{
         position:fixed;
         z-index: 999;
@@ -109,13 +108,33 @@ div.down_footer>div.footer_info{width: 1200px;}
         margin-top:70px;
     }
 
-    section#content02>div.info>p.info_content{
-        width: 98%;
-        margin:0 auto;
+    section#content02>ul{
+        justify-content: space-evenly;
+    }
+    
+    section#content02>ul>li{
+        width:40%;
+        text-align: center;
     }
 
-    section#content02>div.info{
-        margin:80px auto;
+    section#content02>ul>li>figure>figcaption>img{
+        width:40%;
+    }
+
+    section#content02>ul>li>figure>figcaption>dl{
+        text-align: left;
+        padding:15px 10px;
+        wdith:60%;
+    }
+
+    section#content02>ul>li>figure>figcaption>dl>dt{
+        height: 50px;
+        font-size: 1em;
+    }
+    
+    section#content02>ul>li>figure>figcaption>dl>dd{
+        margin:15px 0;
+        font-size: 14px;
     }
 
 /* footer */
@@ -164,8 +183,8 @@ div.sns_icon ul li:last-child{
 }
 
 /* mobile */
-@media screen and (max-width:579px) and (min-width:350px){
-/* header */
+@media screen and (max-width:579px) and (min-width:350px) {
+ /* header */
 div#header{
     position:fixed;
     z-index: 999;
@@ -269,18 +288,32 @@ section#content01{
     margin-top:70px;
 }
 
-section#content02>div.info{
-    margin:70px auto;
+section#content01>h2{
+    font-size: 3em;
 }
 
-section#content02>div.info>p.date{
-    margin-bottom:50px;
+section#content02>ul{
+    justify-content: space-around;
 }
 
-section#content02>div.info>p.info_content{
-    width:100%;
-    font-size: 14px;
+section#content02>ul>li{
+    width:90%;
+    text-align: center;
 }
+
+section#content02>ul>li>figure>figcaption>img{
+    width:40%;
+}
+
+section#content02>ul>li>figure>figcaption>dl{
+    text-align: left;
+    width: 60%;
+}
+
+section#content02>ul>li>figure>figcaption>dl>dt{
+    line-height:30px;
+}
+
 
 /* footer */
 div.up_footer>ul>li{

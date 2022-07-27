@@ -102,8 +102,8 @@ section#content01>h2{
     font-size:4em;
     font-weight: bold;
     text-align: center;
-    color:#fff;
-    text-shadow:2px 2px 3px rgba(172, 133, 92, 0.9);
+    color:rgb(255, 255, 255);
+    text-shadow:3px -4px 3px rgba(172, 133, 92, 0.9);
 }
 
 /* div.filter */

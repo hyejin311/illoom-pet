@@ -292,7 +292,6 @@ section#content04>div.img_box02{
     border-top:1px solid #929292;
     padding:70px 0;
     box-sizing: border-box;
-    margin:0 auto;
 }
 
 div.img_box02>h3{
@@ -302,8 +301,11 @@ div.img_box02>h3{
 }
 
 div.img_box02>div{
-    width: 100%;
     text-align: center;
+}
+
+div.img_box02>div>img{
+    width:45%;
 }
 
 div.img_box02>div>p{
@@ -318,8 +320,8 @@ section#content04>div.img_box03{
     border-top:1px dotted #929292;
     padding:70px 0;
     box-sizing: border-box;
-    margin:0 auto;
     display:flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 

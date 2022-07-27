@@ -2,24 +2,21 @@
 /* 1440 */
 @media screen and (min-width:1440px){
 header{width:1440px;}
-
-/* 1200기준 */
-main{width: 1200px;}
+main{width:1200px;}
 div.down_footer>div.footer_info{width:1200px;}
 }
 
-/* 1439 - 1200 */
 @media screen and (max-width:1439px) and (min-width:1200px){
-
-main{width: 1200px;}
-#content04>figure img{width:45%;}
+main{width:1200px;}
 div.down_footer>div.footer_info{width:1200px;}
 }
 
-@media screen and (max-width:1199px) and (min-width:980px){}
+@media screen and (max-width:1199px) and (min-width:980px){
+
+}
 
 /* tablet */
-@media screen and (max-width:979px) and (min-width:580px){
+@media screen and (max-width:980px) and (min-width:580px){
 /* header */
 div#header{
     position:fixed;
@@ -114,11 +111,37 @@ section#content01{
     margin-top:70px;
 }
 
-section>figure>figcaption>dl>dt{
-    font-size: 30px;
+section#content01>h2{
+    font-size: 24px;
 }
-section>figure>figcaption>dl>dd{
-    font-size: 1.2em;
+
+section#content01>p.main_text{
+    line-height: 30px;
+}
+
+ul.big_box>li>h3{
+    font-size: 24px;
+}
+
+/* div.choose */
+ul.big_box>li>div.choose p{
+    width:80%;
+}
+
+ul.big_box>li:nth-child(3)>div.choose,
+ul.big_box>li:last-child>div.choose{
+    width: 100%;
+    display: block;
+}
+
+ul.big_box>li:nth-child(3)>div.choose>p,
+ul.big_box>li:last-child>div.choose>p{
+    width: 80%;
+    margin:30px auto;
+}
+
+ul.big_box>li>img{
+    width: 60%;
 }
 
 /* footer */
@@ -165,32 +188,9 @@ div.sns_icon ul li:last-child{
     margin-right: 0;
 }
 }
-    
-/* mobile */
-@media screen and (max-width:579px) and (min-width:480px){
 
-    main{
-        margin-bottom:100px;
-    }
-    
-    section#content01{
-        margin-top:70px;
-    }
-    
-    section#content02,section#content03{
-        padding:0;
-        text-align: center;
-    }
-    
-    figure{
-       margin-bottom:50px;
-    }
-    
-    figure p{
-        width: 200px;
-    }
-    
-    /* header */
+/* mobile */
+@media screen and (max-width:580px) and (min-width:350px){
     div#header{
         position:fixed;
         z-index: 999;
@@ -207,6 +207,10 @@ div.sns_icon ul li:last-child{
         left:35%;
     }
     
+    ul.small_nav>li>a{
+        font-size: 12px;
+    }
+    
     div.nav_btn{
         display: flex;
         position:absolute;
@@ -218,8 +222,8 @@ div.sns_icon ul li:last-child{
     }
     
     nav.navbar{
-    /* display:flex; */
-    display:none;
+        /* display:flex; */
+        display:none;
         position: fixed;
         justify-content: center;
         width: 100%; height: 100%;
@@ -285,96 +289,112 @@ div.sns_icon ul li:last-child{
         border-radius: 50%;
     }
     
-    ul.list{
-        width: 100%;
-        padding:20px 0;
-        box-sizing: border-box;
-        line-height: 2;
-        font-size: 18px;
-    }
-    
-    ul.list>li{
-        border-right: 1px solid rgba(146, 146, 146, 1);
-    }
-    
-    /* section#content02 */
-    section#content02>h3{
-        font-size: 1.5em;
-        margin:0 auto;
-        padding: 70px 0;
-        box-sizing: border-box;
-    }
-    
-    section>figure>figcaption>dl>dd{
-        width: 90vw;
-        margin: 0 auto;
-    }
-    section#content03>figure>figcaption>div.desc{
-        display:block;
+    /* section */
+    section#content01{
+        margin-top:70px;
     }
 
-    div.desc>div{
-        width: 100%;
+    section#content01>img{
+        margin-bottom:20px;
+    }
+
+    section#content01>h2{
+        font-size:22px;
+        margin-bottom:20px;
+    }
+
+    section#content01>p.main_text{
+        line-height: 20px;
+        font-size: 14px;
         margin-bottom:30px;
     }
 
-    div.desc dl>dt{
-        text-align: center;
+    ul.big_box>li>h3{
+        font-size: 22px;
     }
-    
-    /* footer */
-    div.up_footer>ul>li{
-        padding:0 10px;
-        font-size: 12px;
-        box-sizing: border-box;
-    }
-    
-    footer>div.down_footer{
-        margin:0 auto;
+
+    ul.big_box>li>div.choose p{
         width:100%;
-        padding:10px 0;
-        box-sizing: border-box;
+        margin:30px auto;
+        line-height:30px;
+        font-size: 14px;
     }
-    
-    div.down_footer>div.footer_info{
-        width: 90%;
-        display: block;
-        margin:0 auto;
-    }
-    
-    div.footer_info dl{
-        width:100%;
-        height: 4vh;
-        font-size: 12px;
-    }
-    
-    div.footer_info>dl dt{
-        width:35vw;
-        margin-right:10px;
-    }
-    
-    div.footer_info dl dd{
-        width: 50vw;
-        margin-right:0;
-    }
-    
-    div.down_footer>div.sns_icon{
-        display:block;
-    }
-    
-    div.down_footer>div.sns_icon ul{
-        width:300px;
-        margin:20px auto;
-        text-align:center;
-    }
-        
-    div.sns_icon ul li:last-child{
-    margin-right: 0;
-    }
-    
-    footer>small{
-    width: 80%;
+
+    ul.big_box>li:nth-child(3)>div.choose,
+    ul.big_box>li:last-child>div.choose{
+    display:block;
+    width:100%;
     margin:0 auto;
-    line-height:1.5;
-    font-size:14px;
-    }}
+}
+
+ul.big_box>li:nth-child(3)>div.choose>p,
+ul.big_box>li:last-child>div.choose>p{
+    width: 90%;
+    margin-bottom:30px;
+}
+
+ul.big_box>li>div.choose>p:hover{
+    font-size: 16px;
+}
+
+ul.big_box>li>img{
+    width: 70%;
+}
+
+/* footer */
+div.up_footer>ul>li{
+    padding:0 10px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+footer>div.down_footer{
+    margin:0 auto;
+    width:100%;
+    padding:10px 0;
+    box-sizing: border-box;
+}
+
+div.down_footer>div.footer_info{
+    width: 90%;
+    display: block;
+    margin:0 auto;
+}
+
+div.footer_info dl{
+    width:100%;
+    height: 4vh;
+    font-size: 12px;
+}
+
+div.footer_info>dl dt{
+    width:35vw;
+    margin-right:10px;
+}
+
+div.footer_info dl dd{
+    width: 50vw;
+    margin-right:0;
+}
+
+div.down_footer>div.sns_icon{
+    display:block;
+}
+
+div.down_footer>div.sns_icon ul{
+    width:300px;
+    margin:20px auto;
+    text-align:center;
+}
+    
+div.sns_icon ul li:last-child{
+margin-right: 0;
+}
+
+footer>small{
+width: 80%;
+margin:0 auto;
+line-height:1.5;
+font-size:14px;
+}
+}

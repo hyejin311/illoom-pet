@@ -30,7 +30,8 @@ ul.small_nav{
 }
 
 nav.navbar{
-    display:flex;
+    /* display:flex; */
+    display:none;
     position: fixed;
     justify-content: center;
     width: 50vw; height: 100%;
@@ -195,7 +196,6 @@ div.down_footer>div.sns_icon ul{
 div.sns_icon ul li:last-child{
     margin-right: 0;
 }
-
 }
 
 /* mobile */
@@ -231,6 +231,7 @@ div.sns_icon ul li:last-child{
     }
     
     nav.navbar{
+        /* display:flex; */
         display:none;
         position: fixed;
         justify-content: center;
@@ -392,7 +393,7 @@ div.sns_icon ul li:last-child{
         margin:0;
     }
 
-    /* footer */
+/* footer */
 div.up_footer>ul>li{
     padding:0 10px;
     font-size: 12px;
