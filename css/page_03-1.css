@@ -122,6 +122,11 @@ section#content02>ul li{
     margin-bottom:110px;
 }
 
+section#content02>ul li:hover{
+    transform: translateX(100px);
+    transition: transform .5s;
+}
+
 section#content02>ul li:last-child{
     margin-bottom:0;
 }
@@ -131,15 +136,9 @@ section#content02>ul>li>p{
     margin:auto;
 }
 
-section#content02>ul>li>p.text_01,
-section#content02>ul>li>p.text_02,
-section#content02>ul>li>p.text_03,
-section#content02>ul>li>p.text_04,
-section#content02>ul>li>p.text_05{
+section#content02>ul>li>p.text{
     margin-left:20px;
 }
-
-
 
 section#content02>ul>li>p>span:first-child{
     font-size: 18px;

@@ -10,7 +10,7 @@ div#wrap{
 main{
     width: 98%; /* 1200px; */
     margin:0 auto;
-    padding:20px 0;
+    padding:20px 0 100px;
     box-sizing: border-box;
 }
 
@@ -273,13 +273,14 @@ div.how_to>ul>li{
 div.how_to>ul>li>span:first-of-type{
     display: inline-flex;
     color:#fff;
+    width:150px;
     border-radius: 100%;
     font-size: 20px;
     font-weight: bold;
     padding:20px;
     box-sizing: border-box;
     background-color:rgba(172, 133, 92, 0.9);
-    text-align: center;
+    justify-content: center;
 }
 
 div.how_to>ul>li>span:last-of-type{

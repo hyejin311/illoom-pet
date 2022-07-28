@@ -11,9 +11,7 @@ main{width:1200px;}
 div.down_footer>div.footer_info{width:1200px;}
 }
 
-@media screen and (max-width:1199px) and (min-width:980px){
-
-}
+@media screen and (max-width:1199px) and (min-width:980px){}
 
 /* tablet */
 @media screen and (max-width:980px) and (min-width:580px){

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이벤트 메인페이지</title>
     <script src="https://kit.fontawesome.com/4476cc0614.js" crossorigin="anonymous"></script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
@@ -76,12 +78,12 @@
 <section id="content02">
 <ul>
 <li>
-    <p class="img_01">
+    <p class="img">
     <a href="#">
     <img src="/img/page_01-3/event01.png" alt="이벤트이미지1"></a>
 </p>
 
-<p class="text_01">
+<p class="text">
     <span>2022.07.01 ~ 2022.07.30</span> <br />
     <span>캐스터네츠 취향 테스트</span> <br />
     <span>우리 집 반려동물은 어떤 가구를 필요로 할까?<br /> 일룸 캐스터네츠 취향 찾기!</span>
@@ -89,12 +91,12 @@
 </li>
 
 <li>
-    <p class="img_02">
+    <p class="img">
         <a href="#">
         <img src="/img/page_01-3/event02.png" alt="이벤트이미지2"></a>
         </p>
 
-    <p class="text_02">
+    <p class="text">
         <span>2022.07.20 ~ 2022.08.10</span> <br />
         <span>영화 &lt;외계+인&gt; 1부 응모 이벤트 </span> <br />
         <span>지금 바로 응모하러 출바알</span>
@@ -102,12 +104,12 @@
 </li>
 
 <li>
-    <p class="img_03">
+    <p class="img">
         <a href="#">
         <img src="/img/page_01-3/event03.png" alt="이벤트이미지3"></a>
         </p>
 
-    <p class="text_03">
+    <p class="text">
         <span>2022.07.01~2022.07.30</span> <br />
         <span>일룸 펫 가구 REVIEW EVENT</span> <br />
         <span> 일룸 펫 가구 리뷰 쓰고 다이슨 에어랩 받자 🤗</span>
@@ -115,12 +117,12 @@
 </li>
 
 <li>
-    <p class="img_04">
+    <p class="img">
         <a href="#">
         <img src="/img/page_01-3/event04.png" alt="이벤트이미지4"></a>
         </p>
 
-    <p class="text_04">
+    <p class="text">
         <span>2022.07.10~2022.08.10</span> <br />
         <span>여름 세일 이벤트</span> <br />
         <span>뜨거운 여름을 식힐 일룸의 시원한 세일 나갑니다</span>
@@ -128,12 +130,12 @@
 </li>
 
 <li>
-    <p class="img_05">
+    <p class="img">
         <a href="#">
         <img src="/img/page_01-3/event05.png" alt="이벤트이미지5"></a>
         </p>
 
-    <p class="text_05">
+    <p class="text">
         <span>2022.07.15~2022.08.15</span> <br />
         <span>이 달의 카드 혜택 확인하고</span> <br />
         <span>추가 할인받아가세요👍 </span>
@@ -218,5 +220,14 @@
 <small>webmaster@iloom.com·Copyright (c) 2018 iloom lnc. All rights reserved</small>
 </footer>
 </div>
+
+<!-- script -->
+<script>
+    $(function(){
+        $('#top_btn').click(function(e){
+            $(this).css('scrollTop','0');
+        });
+    })
+</script>
 </body>
 </html>

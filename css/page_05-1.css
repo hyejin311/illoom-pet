@@ -111,31 +111,34 @@ div#bodo>ul{
     width: 90%;
     margin:0 auto;
     justify-content: space-between;
+    align-items: center;
 }
 
 div#bodo>ul>li{
     width: 30%;
     cursor: pointer;
-}
-
-div#bodo>ul>li>figure{
-margin-bottom:110px;
-}
-
-ul>li>figure>figcaption{
+    margin-bottom:100px;
     background-color: #fff;
+    padding:20px;
+    box-sizing: border-box;
+}
+
+div#bodo>ul>li:hover{
+    transform: scale(1.2); 
+    transition: transform 0.5s;
+    border:5px solid rgba(172, 133, 92, 0.5);
 }
 
 ul>li>figure>figcaption>dl{
-padding:50px 0;
+padding-top:30px;
 box-sizing: border-box;
 }
 
 ul>li>figure>figcaption>dl>dt{
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 18px;
     height: 60px;
-    line-height: 30px;
+    line-height: 25px;
     text-align: center;
     margin-bottom:30px;
 }

@@ -109,15 +109,25 @@ section#content02>ul{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 section#content02>ul>li{
     width:30%;
-    margin-bottom:100px;
+    margin-bottom:50px;
 }
 
 section#content02>ul>li>figure{
     width:100%;
+    text-align: center;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+section#content02>ul>li>figure:hover{
+    transform:scale(1);
+    transition: all 0.1s ease-out; border-radius: 20%;
+    border:5px solid rgba(172, 133, 92, 0.6);
 }
 
 section#content02>ul>li>figure>a>img{

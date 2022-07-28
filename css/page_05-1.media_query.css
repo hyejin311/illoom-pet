@@ -13,11 +13,6 @@
 }
 
 @media screen and (max-width:1199px) and (min-width:980px){
-    ul>li>figure>figcaption>dl{
-        padding:30px 0;
-        box-sizing: border-box;
-        }
-
     ul>li>figure>figcaption>dl>dt{
         font-size: 1em;
         margin-bottom:15px;
