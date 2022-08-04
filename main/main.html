@@ -429,12 +429,12 @@
     console.log(Liwidth);
 
     $('div.gall>ul>li:first').appendTo('div.gall>ul');
-    $('div.gall>ul').css('margin-left','-='+Liwidth+'px');
+    $('div.gall>ul').css('margin-left','-'+Liwidth+'px');
     
     //next
     $('p.next').click(function(e){
         $('div.gall>ul').stop().animate({marginLeft:'-='+Liwidth+'px'},700,function(e){
-        $('div.gall>li:first').appendTo('div.gall>ul');
+        $('div.gall>ul>li:first').apeendTo('div.gall>ul');
         $('div.gall>ul').css('margin-left','-'+Liwidth+'px');
         });
     });
@@ -442,11 +442,10 @@
     //prev
     $('p.prev').click(function(e){
         $('div.gall>ul').stop().animate({marginLeft:'-='+Liwidth+'px'},700,function(e){
-            $('div.gall>li:last').prependTo('div.gall>ul');
-        $('div.gall>ul').css('margin-left','+'+Liwidth+'px');
+            $('div.gall>ul>li:last').prependTo('div.gall>ul');
+        $('div.gall>ul').css('margin-left','+='+Liwidth+'px');
         });
     });
-
 
     $('#content04>div.video_img>div>p').click(function(e){
         $('div.video_img>ul>li>img:first').appendTo('div.video_img>ul');

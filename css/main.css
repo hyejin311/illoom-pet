@@ -189,12 +189,16 @@ background:url('/img/main/main_img01.jpg') no-repeat center top;
 position:relative;
 }
 
+div.gall>ul>li:first-child{
+    background-image:url('/img/main/main_img01.png');
+}
+
 div.gall>ul>li:nth-child(2){
-    background:url('/img/main/main_img02.png') no-repeat center top;
+    background-image:url('/img/main/main_img02.png');
     }
     
 div.gall>ul>li:nth-child(3){
-    background:url('/img/main/main_img03.png') no-repeat center top;
+    background-image:url('/img/main/main_img03.png');
 }    
 
 div.gall>ul>li>dl{

@@ -198,15 +198,9 @@ ul.big_box>li:last-child>div.choose>p{
 }
 
 ul.big_box>li>div.choose>p:hover{
-    font-weight: bold;
     font-size: 18px;
-    padding:5px 0;
-    box-sizing: border-box;
     transform:none;
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function:ease-in;
-    background-color: rgb(255,248,122);
+    transition-property: all, 0.5s; background-color: rgb(255,248,122);
 }
 
 ul.big_box>li>img{
