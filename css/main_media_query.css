@@ -92,8 +92,7 @@ ul.navbar_menu>li>a{
 }
 
 ul.navbar_menu>li>a:hover{
-    background-color:rgba(230, 207, 182, 0.9);
-    border-radius: 50%;
+    border-bottom: 3px solid  rgb(230, 180, 126);
     }
 
 nav.navbar>p.close_btn{

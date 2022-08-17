@@ -6,12 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>취향 test</title>
     <script src="https://kit.fontawesome.com/4476cc0614.js" crossorigin="anonymous"></script>
-    <script src="/js/jquery-3.6.0.min.js"></script>
-    <script src="/js/jquery-ui.min.js"></script>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Ms+Madi&family=Orelega+One&family=Staatliches&display=swap');
-    </style>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/test.js"></script>
 
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/page2.css">
@@ -42,19 +38,20 @@
             
     <!-- nav.navbar -->
     <nav class="navbar">
-    <!-- ul.navbar_menu -->
-    <ul class="navbar_menu">
-    <div class="nav_logo">
-        <img src="/img/red_logo.png" alt="내비 로고">
-    </div>
-        <li><a href="#">
+        <!-- ul.navbar_menu -->
+        <ul class="navbar_menu">
+        <div class="navbar_logo">
+            <img src="/img/red_logo.png" alt="logo">
+        </div>
+            <li><a href="#">
             <i class="fa-solid fa-magnifying-glass"></i></a></li>
-        <li><a href="#">일룸 소개</a></li>
-        <li><a href="#">가구</a></li>
-        <li><a href="#">이벤트</a></li>
-        <li><a href="#">공지사항</a></li>
-        <li><a href="#">보도자료</a></li>
-    </ul>
+            <li><a href="/page_1/page_01-1.html">일룸 소개</a></li>
+            <li><a href="/page_1/page_02-1.html">가구</a></li>
+            <li><a href="/page_1/page_03-1.html">이벤트</a></li>
+            <li><a href="/page_1/page_04-1.html">공지사항</a></li>
+            <li><a href="/page_1/page_05-1.html">보도자료</a></li>
+            <li><a href="#">검색</a></li>
+        </ul>
                 
     <!-- p.close_btn -->
     <p class="close_btn">
@@ -62,135 +59,166 @@
     </p>
     </nav>
     </div>
-            
-    <!-- div#top_btn -->
-    <div id="top_btn">
-        <a href="#">Top</a>
-    </div>
 
 <!--  01 -->
-<section id="content01">
-    <img src="/img/page2/main_img.jpg" alt="">
-    <h2>우리집 고양이 일룸을 좋아해</h2>
-    <p class="main_text">내 쇼핑 장바구니에 가득한 물건들<br />
-        우리 집 고양이라면 어떤 물건을 쇼핑할까?<br />
-        취향 테스트를 통해 우리 집 고양이가 좋아할 가구를 찾아봐요!</p>
-    <p class="main_btn">
-        <button>취향 테스트 GO!</button>
-    </p>
-</section>
-
-<!-- 02 -->
-<main>
-    <!-- content02 -->
-<section id="content02">
+<div id="container">
+<!-- content01 -->
+<section id="main">
     <!-- div.show -->
 <div class="show">
     <!-- div.gall -->
 <div class="gall">
     <!-- ul.big_box -->
 <ul class="big_box">
+
+<li class="first_pg">
+    <img src="/img/page2/main_img.jpg" alt="main_img">
+    <h2>우리집 고양이 일룸을 좋아해</h2>
+<p class="main_text">
+        내 쇼핑 장바구니에 가득한 물건들<br />
+        우리 집 고양이라면 어떤 물건을 쇼핑할까?<br />
+        취향 테스트를 통해 우리 집 고양이가 좋아할 가구를 찾아봐요!</p>
+<p class="main_btn">
+    <button>취향 테스트 GO!</button></p>
+</li>
+
 <li>
 <div class="circle">
-    <p class="color"></p>
-    <p></p>
-    <p></p>
-    <p></p>
+    <p class="color"></p> <p></p> <p></p> <p></p>
 </div>
 
 <h3>Q1. 우리집 고양이는 어떤 타입인가요?</h3>
 
 <div class="choose">
-    <p>나는 아직 졸리다 집사야 청소기는 이따 돌려라 <br />
-    아직 어린 고양이이거나 노묘,야생성이 낮은 고양이</p>
+    <p class="score1">
+        나는 아직 졸리다 집사야 청소기는 이따 돌려라 <br />
+        아직 어린 고양이이거나 노묘,야생성이 낮은 고양이</p>
 
-    <p>똥꼬발랄이라는 말로 표현할 수 없는 <br />
-    높은 곳을 좋아하는 활동적인 고양이</p>
+    <p class="score2">
+        똥꼬발랄이라는 말로 표현할 수 없는 <br />
+        높은 곳을 좋아하는 활동적인 고양이</p>
 </div>
 
-<img src="/img/page2/q_01.jpg" alt="취향test_img1">
+<div class="test_img">
+<img src="/img/page2/q_01.jpg" alt="취향test_img1"></div>
+
+<p class="left_btn">
+    <button><i class="fa-solid fa-arrow-left"></i></button></p>
 </li>
 
 <li>
     <div class="circle">
-        <p></p>
-        <p class="color"></p>
-        <p></p>
-        <p></p>
+        <p></p> <p class="color"></p> <p></p> <p></p>
     </div>
     
     <h3>Q2. 우리집 고양이의 성격을 알려주세요!</h3>
     
     <div class="choose">
-        <p>우리 좀 시간을 가지자.. 언제까지냐면 계속<br />
+        <p>
+            우리 좀 시간을 가지자.. 언제까지냐면 계속<br />
             나는야 독립적인 멋장이 고양이 </p>
 
-        <p>집사가 뭐하면 꼭 와서 확인해야 한다 <br />
-        집사야 뭐하냥 기웃기웃 고양이</p>
+        <p>
+            집사가 뭐하면 꼭 와서 확인해야 한다 <br />
+            집사야 뭐하냥 기웃기웃 고양이</p>
     </div>
     
-    <img src="/img/page2/q_02.jpg" alt="취향test_img2">
-    </li>
+    <div class="test_img">
+        <img src="/img/page2/q_02.jpg" alt="취향test_img2"></div>
 
-<li>
-        <div class="circle">
-            <p></p>
-            <p></p>
-            <p class="color"></p>
-            <p></p>
-        </div>
-        
-        <h3>Q3. 우리집 고양이는 주로 어떤 시간을 즐기나요?</h3>
-
-
-<div class="choose">
-            <p>고양이 OTT 플랫폼 무료 이용권 구독 <br />
-            높은 곳에 올라가 창 밖 구경하는 시간</p>
-
-            <p>집사는 왜 맨날 저 네모난 화면만 보는거냥 <br />
-            일하는 집사 구경하는 시간</p>
-
-            <p>집사 내 옆으로 온다 실시<br />
-            집사와 함께 느긋히 휴식하는 시간</p>
-
-            <p>고롱고롱 크어어어<br />
-            푹신한 곳에서 조용히 휴식하는 시간</p>
-        </div>
-        
-        <img src="/img/page2/q_03.jpg" alt="취향test_img3">
-        </li>
+<p class="left_btn">
+    <button><i class="fa-solid fa-arrow-left"></i></button></p>
+</li>
 
 <li>
     <div class="circle">
-        <p></p>
-        <p></p>
-        <p></p>
-    <p class="color"></p>
+        <p></p> <p></p> <p class="color"></p> <p></p>
     </div>
+        
+<h3>Q3. 우리집 고양이는 주로 어떤 시간을 즐기나요?</h3>
+
+<div class="choose">
+    <p>
+        고양이 OTT 플랫폼 무료 이용권 구독 <br />
+        높은 곳에 올라가 창 밖 구경하는 시간</p>
+
+    <p>
+        집사는 왜 맨날 저 네모난 화면만 보는거냥 <br />
+        일하는 집사 구경하는 시간</p>
+
+    <p>
+        집사 내 옆으로 온다 실시<br />
+        집사와 함께 느긋히 휴식하는 시간</p>
+
+    <p>
+        고롱고롱 크어어어<br />
+        푹신한 곳에서 조용히 휴식하는 시간</p>
+</div>
+        
+<div class="test_img">
+    <img src="/img/page2/q_03.jpg" alt="취향test_img3"></div>
+
+<p class="left_btn">
+    <button><i class="fa-solid fa-arrow-left"></i></button></p>
+</li>
+
+<li>
+    <div class="circle">
+        <p></p> <p></p> <p></p> <p class="color"></p>
+</div>
             
-    <h3>Q4. 우리집 고양이만의 아늑한 공간</h3>
+<h3>Q4. 우리집 고양이만의 아늑한 공간</h3>
             
-    <div class="choose">
-        <p>집사와 고양이가 함께 사용하는<br />
-            실용적인 공간</p>
+<div class="choose">
+    <p class="score100">
+        집사와 고양이가 함께 사용하는<br />
+        실용적인 공간</p>
 
-        <p>고양이는 잘 때도 귀여우니까 <br />
-            조용하고 아늑한 고양이만의 공간</p>
+    <p class="score50">
+        고양이는 잘 때도 귀여우니까 <br />
+        조용하고 아늑한 고양이만의 공간</p>
 
-        <p>탁 트인 시야의 공간<br />
-        (높은 곳을 좋아하는 활동적인 고양이)</p>
+    <p class="score20">
+        탁 트인 시야의 공간<br />
+    (높은 곳을 좋아하는 활동적인 고양이)</p>
 
-        <p>투명해먹이 있는 공간<br />
+    <p class="score10">
+        투명해먹이 있는 공간<br />
         (아직 어리거나 야생성이 적은 고양이 혹은 노묘)</p>
-    </div>
+</div>
             
-    <img src="/img/page2/q_04.jpg" alt="취향test_img4">
+<div class="test_img">
+    <img src="/img/page2/q_04.jpg" alt="취향test_img4"></div>
+
+<p class="left_btn">
+    <button><i class="fa-solid fa-arrow-left"></i></button></p>
+</li>
+
+<li class="showresult">
+    <img class="showresult_pic" src="../img/page2/catpaw.png" alt="결과보기 이미지">
+<p class="left_btn">
+    <button>
+        <i class="fa-solid fa-arrow-left"></i>
+    </button></p>
+<p class="showresult_btn">
+    <button>결과 보기</button></p>
+</li>
+
+<li>
+    <span class="result_title">우리 집 고양이의 취향은 이 가구일지도 몰라요!</span>
+    <div id="result">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+<p class="link_btn">
+    <button>이 가구 보러갈래요!</button></p>
 </li>
 </ul>
 </div>
 </div>
 </section>
-</main>
+</div>
     
 <!-- footer -->
 <footer>
@@ -254,11 +282,11 @@
         
     <div class="sns_icon">
     <ul>
-        <li><a href="#">
+        <li><a href="https://www.instagram.com/iloom_official/">
             <img src="/img/main/sns_icon01.png" alt="인스타그램"></a></li>
-        <li><a href="#">
+        <li><a href="https://ko-kr.facebook.com/myiloom/">
             <img src="/img/main/sns_icon02.png" alt="페이스북"></a></li>
-        <li><a href="#">
+        <li><a href="https://m.blog.naver.com/PostList.naver?blogId=iloom_blog">
             <img src="/img/main/sns_icon03.png" alt="네이버블로그"></a></li>
     </ul>
     </div>
@@ -269,3 +297,37 @@
     </div>
     </body>
     </html>
+
+<script>
+$(function(){
+    let Liwidth = $('div.gall>ul>li').width();
+    console.log(Liwidth);
+    
+    $('p.main_btn').click(function(e){
+    $('div.gall>ul').animate({marginLeft: '-' +Liwidth+ 'px'});
+});
+
+//right
+$('div.choose p').click(function(e){
+    $('div.gall>ul').stop().animate({marginLeft:'-='+Liwidth+'px'},700,function(e){
+    $('div.gall>ul>li:first').appendTo('div.gall>ul');
+    $('div.gall>ul').css('margin-left','-'+Liwidth+'px');
+    });
+});
+
+$('p.showresult_btn').click(function(e){
+    $('div.gall>ul').stop().animate({marginLeft:'-='+Liwidth+'px'},700,function(e){
+    $('div.gall>ul>li:first').appendTo('div.gall>ul');
+    $('div.gall>ul').css('margin-left','-'+Liwidth+'px');
+    });
+});
+
+//left
+    $('p.left_btn').click(function(e){
+    $('div.gall>ul').stop().animate({marginLeft:'+='+Liwidth+'px'},700,function(e){
+    $('div.gall>ul>li:last').prependTo('div.gall>ul');
+    $('div.gall>ul').css('margin-left','-'+Liwidth+'px');
+    });
+});
+});
+</script>

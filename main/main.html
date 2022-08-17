@@ -4,14 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>일룸 pet 메인페이지 포기는 김치담궈라</title>
+    <title>Main</title>
     <script src="https://kit.fontawesome.com/4476cc0614.js" crossorigin="anonymous"></script>
     <script src="/js/jquery-3.6.0.min.js"></script>
-    <script src="/js/jquery-ui.min.js"></script>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Ms+Madi&family=Orelega+One&family=Staatliches&display=swap');
-    </style>
+    <script src="../js/search.js" defer></script>
 
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
@@ -92,21 +88,36 @@
 </div>
 </article>
 
+<!-- div.search-content -->
+
 <!-- nav.navbar -->
+<!-- search -->
+<div class="search-wrapper">
+    <form id="search-form">
+    <input type="text" id="search" placeholder="어떤 가구를 찾고 계세요?:)" />
+    <button id="searchBtn">검색</button>
+</form>
+
+<ul id="list">
+    <li>
+        <p></p>
+        <p></p>
+    </li>
+</ul>
+</div>
+
 <nav class="navbar">
 <!-- ul.navbar_menu -->
 <ul class="navbar_menu">
 <div class="navbar_logo">
     <img src="/img/red_logo.png" alt="logo">
 </div>
-    <li><a href="#">
-        <i class="fa-solid fa-magnifying-glass"></i></a></li>
-    <li><a href="#">일룸 소개</a></li>
-    <li><a href="#">가구</a></li>
-    <li><a href="#">이벤트</a></li>
-    <li><a href="#">공지사항</a></li>
-    <li><a href="#">보도자료</a></li>
-    <li><a href="#">검색</a></li>
+
+    <li><a href="/page_1/page_01-1.html">일룸 소개</a></li>
+    <li><a href="/page_1/page_02-1.html">가구</a></li>
+    <li><a href="/page_1/page_03-1.html">이벤트</a></li>
+    <li><a href="/page_1/page_04-1.html">공지사항</a></li>
+    <li><a href="/page_1/page_05-1.html">보도자료</a></li>
 </ul>
 
 <!-- p.close_btn -->
@@ -163,7 +174,7 @@
 <!-- p.test_btn -->
 <div class="test_btn">
 <p>
-<button type="button">TEST</button>
+<button type="button" onclick="location.href='/page_2/page_2.html' ">TEST</button>
 </p>
 </div>
 </section>
@@ -256,14 +267,17 @@
     <img src="/img/main/video_main.png" alt="메인 동영상">
     </p>
 
-<div>
+<div class="video_list">
 <ul>
     <li>
-        <img src="/img/main/video02.png" alt="동영상목록 1"></li>
+        <a href="https://youtu.be/uxVM8fKSIWA" target="_blank">
+        <img src="/img/main/video02.png" alt="동영상목록 1"></a></li>
     <li>
-        <img src="/img/main/video03.png" alt=" 동영상목록 2"></li>
+        <a href="https://youtu.be/cCX2t3ie9k4" target="_blank">
+        <img src="/img/main/video03.png" alt=" 동영상목록 2"></a></li>
     <li>
-        <img src="/img/main/video04.png" alt=" 동영상목록 3"></li>
+        <a href="https://youtu.be/Yu_R9V2wX44" target="_blank">
+        <img src="/img/main/video04.png" alt=" 동영상목록 3"></a></li>
 </ul>
 
 <p class="up_btn">
@@ -297,6 +311,7 @@
     <!-- news_01 -->
 <li class="news_01">
 <figure>
+    <a href="/page_4/page_4.html">
     <img src="/img/main/news_01.png" alt="뉴스 이미지1">
 <figcaption>
     <dl>
@@ -305,6 +320,7 @@
             고양이에게 위험한 식물!</dd>
     </dl>
 </figcaption>
+</a>
 </figure>
 </li>
 
@@ -341,7 +357,6 @@
 <!-- footer -->
 <footer>
 <!-- top button -->
-
 <div class="up_footer">
     <ul>
         <li>이용약관</li>
@@ -401,11 +416,11 @@
 
 <div class="sns_icon">
 <ul>
-    <li><a href="#">
+    <li><a href="https://www.instagram.com/iloom_official/">
         <img src="/img/main/sns_icon01.png" alt="인스타그램"></a></li>
-    <li><a href="#">
+    <li><a href="https://ko-kr.facebook.com/myiloom/">
         <img src="/img/main/sns_icon02.png" alt="페이스북"></a></li>
-    <li><a href="#">
+    <li><a href="https://m.blog.naver.com/PostList.naver?blogId=iloom_blog">
         <img src="/img/main/sns_icon03.png" alt="네이버블로그"></a></li>
 </ul>
 </div>
@@ -428,31 +443,29 @@
     let Liwidth = $('div.gall>ul>li').width();
     console.log(Liwidth);
 
-    $('div.gall>ul>li:first').appendTo('div.gall>ul');
+    $('div.gall>ul>li:last').prependTo('div.gall>ul');
     $('div.gall>ul').css('margin-left','-'+Liwidth+'px');
     
     //next
     $('p.next').click(function(e){
         $('div.gall>ul').stop().animate({marginLeft:'-='+Liwidth+'px'},700,function(e){
-        $('div.gall>ul>li:first').apeendTo('div.gall>ul');
+        $('div.gall>ul>li:first').appendTo('div.gall>ul');
         $('div.gall>ul').css('margin-left','-'+Liwidth+'px');
         });
     });
 
     //prev
     $('p.prev').click(function(e){
-        $('div.gall>ul').stop().animate({marginLeft:'-='+Liwidth+'px'},700,function(e){
+        $('div.gall>ul').stop().animate({marginLeft:'+='+Liwidth+'px'},700,function(e){
             $('div.gall>ul>li:last').prependTo('div.gall>ul');
-        $('div.gall>ul').css('margin-left','+='+Liwidth+'px');
+        $('div.gall>ul').css('margin-left','-'+Liwidth+'px');
         });
     });
 
-    $('#content04>div.video_img>div>p').click(function(e){
-        $('div.video_img>ul>li>img:first').appendTo('div.video_img>ul');
-        $('div.video_img ul').css('margin-left','-','238px');
+    $('#div.video_list>p.up_btn').click(function(e){
+        $('div.video_list>ul>li:first').appendTo('div.video_list>ul');
+        $('div.video_list').css('margin-top','-','137.6px');
     });
 });
-    
-    //prev
 </script>
 </html>
