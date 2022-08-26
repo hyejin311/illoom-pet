@@ -3,7 +3,6 @@
 
 img{max-width:100%;}
 button{cursor: pointer;}
-
 span.result_title{
     display:inline-block;
     font-weight: bold;
@@ -251,6 +250,11 @@ p.showresult_btn>button:hover{
     background-color:rgb(160, 129, 96);
     font-weight: bold;
 }
+
+div#result>p.result1{background-color: green;}
+div#result>p.result2{background-color: pink;}
+div#result>p.result3{background-color: yellow;}
+
 
 /* footer */
 footer{
