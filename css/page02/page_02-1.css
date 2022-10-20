@@ -116,35 +116,6 @@ div#filter{
     position: relative;
 }
 
-ul.option{
-    width: 34.7222222%; /* 500px; */
-    margin:0 auto;
-    padding-bottom: 20px;
-    box-sizing: border-box;
-    display: flex;
-}
-
-ul.option>li{
-width: 50%;
-text-align: center;
-cursor:pointer;
-}
-
-ul.option>li:first-child{
-    border-right: 1px solid rgb(172, 133, 92);
-}
-
-ul.option>li>a{
-    font-size: 1.2em;
-    font-weight: bold;
-    color:rgb(172, 133, 92);
-}
-
-ul.option>li>a:hover{
-background-color:rgba(230, 207, 182, 0.6);
-border-radius: 100%;
-}
-
 /* p.pricefilter */
 ul.pricefilter{
     width: 15.9722222%; /* 230px; */
@@ -155,16 +126,19 @@ ul.pricefilter{
     
 ul.pricefilter>li{
 width: 50%;
+padding: 4px;
 text-align: center;
-}
+border-bottom:2px solid rgba(172, 133, 92, 0.9);
 
-ul.pricefilter>li:first-child{
-    border-right: 2px solid rgb(163, 163, 163);
 }
     
 ul.pricefilter>li>a{
-    font-size: 14px;
-    color:rgb(163, 163, 163);
+    font-size: 15px;
+    color:rgb(90,90,90);
+}
+
+ul.pricefilter>li>a:hover{
+    color:#c7a786;
 }
 
 /* section#content02 */
