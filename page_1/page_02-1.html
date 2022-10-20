@@ -79,7 +79,8 @@
 
 <!-- 가격 filter -->
 <ul class="pricefilter">
-    <li class="lowprice"><a href="#">가격정렬순</a></li>
+    <li class="lowprice"><a href="#">가격낮은순</a></li>
+    <li class="highprice"><a href="#">가격높은순</a></li>
 </ul>
 </div>
 
@@ -199,10 +200,37 @@
     ]
 
 
-    //가격정렬 sort
+    //가격낮은 순
     $('.lowprice').click(function(){
         products.sort(function(a,b){
             return a.price - b.price
+        });
+    $('.product_list').html('');
+
+        products.forEach((a,i)=>{
+        var 상품정보 = 
+        `
+        <li>
+        <figure>
+            <a href="#">
+            <img src="/img/page_01-2/product${i+1}.png" alt="가구"></a>
+        <figcaption>
+            <dl>
+                <dt>${products[i].title}</dt>
+                <dd>${products[i].price}</dd>
+            </dl>
+        </figcaption>
+    </figure>
+        `
+        $('.product_list').append(상품정보);
+    });
+
+    });
+
+    //높은순
+    $('.highprice').click(function(){
+        products.sort(function(a,b){
+            return b.price - a.price
         });
     $('.product_list').html('');
 

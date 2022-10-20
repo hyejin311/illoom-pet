@@ -10,7 +10,10 @@
     div.down_footer>div.footer_info{width: 1200px;}
 }
 
-@media screen and (max-width:1199px) and (min-width:980px){   
+@media screen and (max-width:1199px) and (min-width:980px){  
+    ul.pricefilter{
+        width: 20%;
+    }
 }
 
 /* tablet */
@@ -116,7 +119,7 @@ div#filter{
 }
 
 div#filter>ul.pricefilter{
-    width: 200px;
+    width: 20%;
 }
 
 div#filter>ul.pricefilter>li>a{
@@ -308,7 +311,7 @@ div#filter{
 
 /* p.pricefilter */
 ul.pricefilter{
-    width: 150px;
+    width: 200px;
     left:60%;
 }
 
@@ -317,7 +320,8 @@ ul.pricefilter>li{
 }
 
 ul.pricefilter>li>a{
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 30px;
 }
 
 div#big_box>ul>li{
