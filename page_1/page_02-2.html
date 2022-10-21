@@ -99,79 +99,6 @@
 <!-- content02 -->
 <section id="content02">
     <h2>상품필수정보</h2>
-    <div>
-    <dl>
-        <dt>제품명</dt>
-        <dd>가구</dd>
-    </dl>
-
-    <dl>
-        <dt>모델명</dt>
-        <dd>책장캣타워(1200폭_6단)_쿠션형(온라인몰 전용)
-        </dd>
-    </dl>
-
-    <dl>
-        <dt>크기(mm) /중량(kg)</dt>
-        <dd>*상세페이지 참조</dd>
-    </dl>
-
-    <dl>
-        <dt>색상</dt>
-        <dd>NCCGYM/</dd>
-    </dl>
-
-    <dl>
-        <dt>구성품</dt>
-        <dd>*상세페이지 참조</dd>
-    </dl>
-
-    <dl>
-        <dt>주요소재/재질</dt>
-        <dd>*상세페이지 참조</dd>
-    </dl>
-
-    <dl>
-        <dt>사용연령 또는 체중범위</dt>
-        <dd>해당사항 없음</dd>
-    </dl>
-
-    <dl>
-        <dt>동일모델의 출시년월</dt>
-        <dd>해당사항 없음</dd>
-    </dl>
-
-    <dl>
-        <dt>제조자/제조국</dt>
-        <dd>일룸 OEM/대한민국</dd>
-    </dl>
-
-    <dl>
-        <dt>판매자/수입자</dt>
-        <dd>(주)일룸/-</dd>
-    </dl>
-
-    <dl>
-        <dt>취급방법 및 취급시 주의사항 / 안전표시(주의,경고 등)</dt>
-        <dd>*상세페이지 참조</dd>
-    </dl>
-
-    <dl>
-        <dt>배송/설치비용</dt>
-        <dd>무료배송(단, 도서산간지역 제외)</dd>
-    </dl>
-
-    <dl>
-        <dt>품질보증기준</dt>
-        <dd>소비자분쟁해결기준에 따라 1년 무상 A/S <br />
-        (단, 보증기간 내라도 고객 귀책 사유일 경우 제외)</dd>
-    </dl>
-
-    <dl>
-        <dt>AS/책임자와 전화번호</dt>
-        <dd>일룸 고객센터 1577-5670</dd>
-    </dl>
-</div>
 </section>
 
 <!-- content03 -->
@@ -366,6 +293,52 @@
             $(this).animate({scrollTop:0},1000);
         });
     });
+
+//content02 data
+var contentInfo=[
+    {   title:'제품명',
+        subtitle:'가구'},
+    {   title:'모델명',
+        subtitle:'책장캣타워(1200폭_6단)_쿠션형(온라인몰 전용)'},
+    {   title:'크기(mm) /중량(kg)',
+        subtitle:'*상세페이지 참조'},
+    {   title:'색상',
+       subtitle:'NFFSSC'},
+    {   title:'구성품',
+        subtitle:'*상세페이지 참조'},
+    {   title:'주요소재/재질',
+        subtitle:'*상세페이지 참조'},
+    {    title:'사용연령 또는 체중범위',
+        subtitle:'해당사항 없음'},
+    {    title:'동일모델의 출시년월',
+        subtitle:'해당사항 없음'},
+    {    title:'제조자/제조국',
+        subtitle:'일룸 OEM/대한민국'},
+    {   title:'판매자/수입자',
+        subtitle:'(주)일룸'},
+    {   title:'취급방법 및 취급시 주의사항 / 안전표시(주의,경고 등)',
+        subtitle:'*상세페이지 참조'},
+    {   title:'배송/설치비용',
+        subtitle:'무료배송(단, 도서산간지역 제외)'},
+    {   title:'품질보증기준',
+        subtitle:'소비자분쟁해결기준에 따라 1년 무상 A/S, "(단, 보증기간 내라도 고객 귀책 사유일 경우 제외)"'},
+    {   title:'AS/책임자와 전화번호',
+        subtitle:'일룸 고객센터 1577-5670'},
+]
+
+contentInfo.forEach((a,i)=>{
+    var content02Info=
+    `
+    <div>
+    <dl>
+        <dt>${contentInfo[i].title}</dt>
+        <dd>${contentInfo[i].subtitle}</dd>
+    </dl>
+    </div>
+    `
+    $('#content02').append(content02Info);
+})
+
 
      //footer data vinding
      var footerInfo=[
