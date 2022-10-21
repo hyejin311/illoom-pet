@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
-    <script src="https://kit.fontawesome.com/4476cc0614.js" crossorigin="anonymous"></script>
-    <script src="/js/jquery-3.6.0.min.js"></script>
-    <script src="../js/search.js" defer></script>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/index/index.css">
     <link rel="stylesheet" href="../css/index/index_media_query.css">
@@ -371,50 +368,7 @@
 
 <div class="down_footer">
 <div class="footer_info">
-<dl>
-    <dt>사업자등록번호</dt>
-    <dd>215-86-93600</dd>
-</dl>
 
-<dl>
-    <dt>통신판매업신고</dt>
-    <dd>2009-서울송파-0069호</dd>
-</dl>
-
-<dl>
-    <dt>부가통신사업신고필증</dt>
-    <dd>021129</dd>
-</dl>
-
-<dl>
-    <dt>고객센터 전화문의</dt>
-    <dd>1577-5670</dd>
-</dl>
-
-<dl>
-    <dt>평일</dt>
-    <dd>9:30 ~ 17:30 (점심시간 12:30 ~ 13:30)</dd>
-</dl>
-
-<dl>
-    <dt>토요일</dt>
-    <dd>9:30 ~ 12:30 (쇼핑몰 구매상담 제외)</dd>
-</dl>
-
-<dl>
-    <dt>호스팅 서비스사업자</dt>
-    <dd>(주)일룸</dd>
-</dl>
-
-<dl>
-    <dt>개인정보보호 책임자</dt>
-    <dd>강성문</dd>
-</dl>
-
-<dl>
-    <dt>(주)일룸 주소</dt>
-    <dd>서울시 송파구 오금로 311 (오금동45-1) </dd>
-</dl>
 </div>
 
 <div class="sns_icon">
@@ -432,8 +386,10 @@
 <small>webmaster@iloom.com·Copyright (c) 2018 iloom lnc. All rights reserved</small>
 </footer>
 </div>
-</body>
 
+<script src="https://kit.fontawesome.com/4476cc0614.js" crossorigin="anonymous"></script>
+<script src="/js/jquery-3.6.0.min.js"></script>
+<script src="../js/search.js"></script>
 
 <!-- script -->
 <script>
@@ -470,5 +426,57 @@
         $('div.video_list').css('margin-top','-','137.6px');
     });
 });
+
+     //footer data vinding
+     var footerInfo=[
+        {
+            title: '사업자등록번호',
+            subtitle:'215-86-93600'
+        },
+        {
+            title: '통신판매업신고',
+            subtitle:'2009-서울송파-0069호'
+        },
+        {
+            title: '부가통신사업신고필증',
+            subtitle:'021129'
+        },
+        {
+            title: '고객센터 전화문의',
+            subtitle:'1577-5670'
+        },
+        {
+            title: '평일',
+            subtitle:'9:30 ~ 17:30 (점심시간 12:30 ~ 13:30)'
+        },
+        {
+            title: '토요일',
+            subtitle:'9:30 ~ 12:30 (쇼핑몰 구매상담 제외)'
+        },
+        {
+            title: '호스팅 서비스사업자',
+            subtitle:'(주)일룸'
+        },
+        {
+            title: '개인정보보호 책임자',
+            subtitle:'강성문'
+        },
+        {
+            title: '(주)일룸 주소',
+            subtitle:'서울시 송파구 오금로 311 (오금동45-1)'
+        }
+    ]
+
+    footerInfo.forEach((a,i)=>{
+        var downfooterInfo=
+        `
+        <dl>
+        <dt>${footerInfo[i].title}</dt>
+        <dd>${footerInfo[i].subtitle}</dd>
+        </dl>
+        `
+        $('.footer_info').append(downfooterInfo);
+    });
 </script>
+</body>
 </html>
