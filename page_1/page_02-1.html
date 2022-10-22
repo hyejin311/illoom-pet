@@ -21,7 +21,7 @@
 <div id="header">
 <header>
 <h1>
-    <a href="#">
+    <a href="../main/index.html">
     <img src="/img/red_logo.png" alt="logo"></a>pet</h1>
         
 <!-- ul.small_nav -->
@@ -86,6 +86,19 @@
 <div id="big_box">
 <ul class="product_list">
 
+    <li>
+        <figure>
+            <a href="../page_1/page_02-2.html">
+            <img src="/img/page_01-2/product1.png" alt="가구"></a>
+        <figcaption>
+            <dl>
+                <dt>책장캣타워(1200폭 6단)_쿠션형(온라인몰 전용)</dt>
+                <dd>499000</dd>
+            </dl>
+        </figcaption>
+    </figure>
+    </li>
+
 </ul>
 </div>
 </section>
@@ -135,7 +148,7 @@
     });
 
     var products =[
-        {title: '책장캣타워(1200폭 6단)_쿠션형(온라인몰 전용)', price: 499000},
+        // {title: '책장캣타워(1200폭 6단)_쿠션형(온라인몰 전용)', price: 499000},
         {title: '책장캣타워(1200폭 6단)_기본형(온라인몰 전용)', price: 399000},
         {title: '펫 3인 SET(패브릭)(온라인몰 전용)', price: 1099000},
         {title: '데스크스텝(온라인몰 전용)', price: 159000},
@@ -167,7 +180,7 @@
         `
         <li>
         <figure>
-            <a href="#">
+            <a href="../page_1/page_02-2.html">
             <img src="/img/page_01-2/product${i+1}.png" alt="가구"></a>
         <figcaption>
             <dl>
@@ -176,6 +189,7 @@
             </dl>
         </figcaption>
     </figure>
+    </li>
         `
         $('.product_list').append(상품정보);
     });
@@ -203,6 +217,7 @@
             </dl>
         </figcaption>
     </figure>
+    </li>
         `
         $('.product_list').append(상품정보);
     });
@@ -224,6 +239,7 @@
             </dl>
         </figcaption>
     </figure>
+    </li>
         `
         $('.product_list').append(상품정보);
     });
