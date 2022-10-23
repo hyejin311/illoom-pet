@@ -25,8 +25,8 @@
         
 <!-- ul.small_nav -->
 <ul class="small_nav">
-    <li><a href="#">로그인</a></li>
-    <li><a href="#">회원가입</a></li>
+    <li>로그인</li>
+    <li>회원가입</li>
 </ul>
 
 <!-- navbar 햄버거 버튼 -->
@@ -42,15 +42,15 @@
     <div class="navbar_logo">
         <img src="/img/red_logo.png" alt="logo">
     </div>
-        <li><a href="#">
-        <i class="fa-solid fa-magnifying-glass"></i></a></li>
+        <li>
+        <i class="fa-solid fa-magnifying-glass"></i></li>
         <li><a href="/page_1/page_01-1.html">일룸 소개</a></li>
         <li><a href="/page_1/page_02-1.html">가구</a></li>
         <li><a href="/page_1/page_03-1.html">이벤트</a></li>
         <li><a href="/page_1/page_04-1.html">공지사항</a></li>
         <li><a href="/page_1/page_05-1.html">보도자료</a></li>
-        <li><a href="#">검색</a></li>
-    </ul>
+        <li>검색</li>
+        </ul>
     
 <!-- p.close_btn -->
 <p class="close_btn">
@@ -60,9 +60,7 @@
 </div>
 
 <!-- div#top_btn -->
-<div id="top_btn">
-    <a href="#">Top</a>
-</div>
+<div id="top_btn">Top</div>
 
 <!--  01 -->
 <section id="content01">
@@ -156,44 +154,17 @@
         });
     })
 
-     //footer data vinding
-     var footerInfo=[
-        {
-            title: '사업자등록번호',
-            subtitle:'215-86-93600'
-        },
-        {
-            title: '통신판매업신고',
-            subtitle:'2009-서울송파-0069호'
-        },
-        {
-            title: '부가통신사업신고필증',
-            subtitle:'021129'
-        },
-        {
-            title: '고객센터 전화문의',
-            subtitle:'1577-5670'
-        },
-        {
-            title: '평일',
-            subtitle:'9:30 ~ 17:30 (점심시간 12:30 ~ 13:30)'
-        },
-        {
-            title: '토요일',
-            subtitle:'9:30 ~ 12:30 (쇼핑몰 구매상담 제외)'
-        },
-        {
-            title: '호스팅 서비스사업자',
-            subtitle:'(주)일룸'
-        },
-        {
-            title: '개인정보보호 책임자',
-            subtitle:'강성문'
-        },
-        {
-            title: '(주)일룸 주소',
-            subtitle:'서울시 송파구 오금로 311 (오금동45-1)'
-        }
+//footer data vinding
+var footerInfo=[
+        { title: '사업자등록번호', subtitle:'215-86-93600'},
+        { title: '통신판매업신고', subtitle:'2009-서울송파-0069호'},
+        { title: '부가통신사업신고필증', subtitle:'021129'},
+        { title: '고객센터 전화문의', subtitle:'1577-5670'},
+        { title: '평일', subtitle:'9:30 ~ 17:30 (점심시간 12:30 ~ 13:30)'},
+        { title: '토요일', subtitle:'9:30 ~ 12:30 (쇼핑몰 구매상담 제외)'},
+        { title: '호스팅 서비스사업자', subtitle:'(주)일룸'},
+        { title: '개인정보보호 책임자', subtitle:'강성문'},
+        { title: '(주)일룸 주소', subtitle:'서울시 송파구 오금로 311 (오금동45-1)'}
     ]
 
     footerInfo.forEach((a,i)=>{
@@ -205,7 +176,7 @@
         </dl>
         `
         $('.footer_info').append(downfooterInfo);
-    })
+    });
     </script>
     </body>
     </html>
