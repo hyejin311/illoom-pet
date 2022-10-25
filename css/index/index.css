@@ -265,18 +265,18 @@ text-align:right;
 margin:0 auto;
 }
 
-ul.navbar_menu>li{
+ul.navlist>li{
 margin-bottom:20px;
 line-height: 40px;
 }
 
-ul.navbar_menu>li>a{
+ul.navlist>li>a{
     font-size: 1.5em;
     font-weight: bold;
     color: rgba(172, 133, 92, 0.9);
 }
 
-ul.navbar_menu>li>a:hover{
+ul.navlist>li>a:hover{
     border-bottom: 3px solid  rgb(230, 180, 126);}
 
 /* section#content02 */
