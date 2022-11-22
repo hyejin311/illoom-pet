@@ -140,6 +140,7 @@ ul.pricefilter>li>a{
 
 ul.pricefilter>li>a:hover{
     color:#c7a786;
+    cursor: pointer;
 }
 
 /* section#content02 */

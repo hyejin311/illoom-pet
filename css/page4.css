@@ -103,9 +103,9 @@ section#content01>h2{
 /* section#content02 */
 main{
     width:98%; /* 1200px; */
-    margin:100px auto;
+    margin:0 auto;
     position:relative;
-    padding:100px 0;
+    padding:30px 0;
     box-sizing: border-box;
     background-color: #fff;
 }
@@ -123,10 +123,7 @@ section#content02>p.title{
 }
 
 /*div.area01 */
-section#content02>div.area01,
-section#content02>div.area02,
-section#content02>div.area03,
-section#content02>div.area04{
+div.area01,div.area02,div.area03,div.area04{
     width:80%;
     margin:0 auto;
     padding:50px 0;
@@ -139,14 +136,14 @@ section#content02>div img{
     border-radius: 10%;
 }
 
-section#content02>div.area01>img{
+div.area01>img{
     border-radius: 100%;
 }
 
-section#content02 div p{
+div p{
     margin:30px 0;
     font-size: 15px;
-    line-height: 50px;
+    line-height: 30px;
 }
 
 section#content02 div p b{

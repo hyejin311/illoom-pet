@@ -28,8 +28,8 @@
 
 <!-- ul.small_nav -->
 <ul class="small_nav">
-    <li>로그인</li>
-    <li>회원가입</li>
+    <li><a>로그인</a></li>
+    <li><a>회원가입</a></li>
 </ul>
 </header>
 </div>
@@ -124,8 +124,9 @@
 </nav>
 
 <!-- div#top_btn -->
-<div id="top_btn">Top</div>
-</section>
+<div id="top_btn" onclick="window.scrollTo(0,0)">
+    <a>Top</a></div>
+    </section>
 
 <!-- section 02 -->
 <section id="content02">
@@ -393,11 +394,6 @@
 <!-- script -->
 <script>
     $(function(){
-    //top버튼
-    $('#top_btn').click(function(e){
-        $('html','body').animate({scrollTop:0},1000);
-    });
-
     let Liwidth = $('div.gall>ul>li').width();
     console.log(Liwidth);
 
@@ -405,6 +401,8 @@
     $('div.gall>ul').css('margin-left','-'+Liwidth+'px');
     
     //next
+
+    //prev
     $('p.next').click(function(e){
         $('div.gall>ul').stop().animate({marginLeft:'-='+Liwidth+'px'},700,function(e){
         $('div.gall>ul>li:first').appendTo('div.gall>ul');
@@ -412,7 +410,6 @@
         });
     });
 
-    //prev
     $('p.prev').click(function(e){
         $('div.gall>ul').stop().animate({marginLeft:'+='+Liwidth+'px'},700,function(e){
             $('div.gall>ul>li:last').prependTo('div.gall>ul');
@@ -424,6 +421,7 @@
         $('div.video_list>ul>li:first').appendTo('div.video_list>ul');
         $('div.video_list').css('margin-top','-','137.6px');
     });
+
 });
 
 //footer data vinding
