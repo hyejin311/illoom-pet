@@ -23,7 +23,7 @@
 
 <!-- navbar 햄버거 버튼 -->
 <div class="nav_btn">
-    <i class="fa-solid fa-bars"></i>
+    <img src="./img/main/menu.png" alt="nav_menubtn">
 </div>
 
 <!-- ul.small_nav -->
@@ -47,7 +47,7 @@
 <div class="show">
 <!-- 전체 이미지 -->
 <div class="gall">
-<ul>
+<!-- <ul>
     <li class="center_img01">
       <dl>
         <dt>『캐스터네츠(Castanets)』</dt>
@@ -69,16 +69,29 @@
             <dd>공간별로 다양한 우리의 일룸 생활을 확인해보세요</dd>
           </dl>
     </li>
+</ul> -->
+
+<ul class="mainimg_wrap">
+    <li>
+        <img src="./img/main/main_img1.png" alt="mainimg01">
+    </li>
+
+    <li>
+        <img src="./img/main/main_img2.png" alt="mainimg02">
+    </li>
+
+    <li><img src="./img/main/main_img3.png" alt="mainimg03"></li>
 </ul>
 
 <!-- div#prev -->
 <p class="prev">
-    <i class="fa-solid fa-circle-chevron-left"></i>
+    <img src="./img/main/left-arrow.png" alt="left_btn">
 </p>
 
 <!-- div#next -->
 <p class="next">
-    <i class="fa-solid fa-circle-chevron-right"></i>
+<img src="./img/main/right-arrow.png" alt="right_btn">
+</p>
 </div>
 </div>
 </div>
@@ -102,6 +115,7 @@
 </ul>
 </div>
 
+<div class="nav_wrap">
 <nav class="navbar">
 <!-- ul.navbar_menu -->
 <ul class="navbar_menu">
@@ -118,10 +132,10 @@
 
 <!-- p.close_btn -->
 <p class="close_btn">
-    <i class="fa-solid fa-x"></i>
+    <img src="./img/main/close.png" alt="close_btn">
 </p>
 </ul>
-</nav>
+</nav></div>
 
 <!-- div#top_btn -->
 <div id="top_btn" onclick="window.scrollTo(0,0)">
@@ -394,35 +408,52 @@
 <!-- script -->
 <script>
     $(function(){
-    let Liwidth = $('div.gall>ul>li').width();
+    let Liwidth = $('.mainimg_wrap').width()/3;
     console.log(Liwidth);
 
-    $('div.gall>ul>li:last').prependTo('div.gall>ul');
-    $('div.gall>ul').css('margin-left','-'+Liwidth+'px');
+    $('.mainimg_wrap>li:last').prependTo('.mainimg_wrap');
+    $('.mainimg_wrap').css('transform','translateX('-'+'+Liwidth+'px');
     
     //next
 
     //prev
     $('p.next').click(function(e){
-        $('div.gall>ul').stop().animate({marginLeft:'-='+Liwidth+'px'},700,function(e){
-        $('div.gall>ul>li:first').appendTo('div.gall>ul');
-        $('div.gall>ul').css('margin-left','-'+Liwidth+'px');
-        });
+        // $('.mainimg_wrap').stop().animate({marginLeft:'-='+Liwidth+'px'},700,function(e){
+        $('.mainimg_wrap>li:first').appendTo('.mainimg_wrap');
+        $('.mainimg_wrap').css('transform','translateX('-'+'+Liwidth+'px');
+        // });
     });
 
     $('p.prev').click(function(e){
-        $('div.gall>ul').stop().animate({marginLeft:'+='+Liwidth+'px'},700,function(e){
-            $('div.gall>ul>li:last').prependTo('div.gall>ul');
-        $('div.gall>ul').css('margin-left','-'+Liwidth+'px');
-        });
+        // $('.mainimg_wrap').stop().animate({marginLeft:'+='+Liwidth+'px'},700,function(e){
+            $('.mainimg_wrap>li:last').prependTo('.mainimg_wrap');
+        $('.mainimg_wrap').css('transform','translateX('+'+'+Liwidth+'px');
+        // });
     });
 
     $('#div.video_list>p.up_btn').click(function(e){
         $('div.video_list>ul>li:first').appendTo('div.video_list>ul');
         $('div.video_list').css('margin-top','-','137.6px');
     });
-
 });
+
+
+// navbar 보류
+function Navbar(){
+    $('.nav_btn>img').on('click',function(){
+        $('.nav_wrap').css('display','block');
+    });
+}
+Navbar();
+
+function Navclose(){
+    $('.close_btn>img').on('click',function(){
+        $('.nav_wrap').css('display','none');
+    });
+}
+Navclose();
+
+
 
 //footer data vinding
      var footerInfo=[

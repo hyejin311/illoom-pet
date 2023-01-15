@@ -82,16 +82,19 @@ ul.navbar_menu>li>a{
 }
 
 ul.navbar_menu>li>a:hover{
-    border-bottom: 3px solid  rgb(230, 180, 126);
+    border-bottom: 3px solid rgb(230, 180, 126);
     }
 
-nav.navbar>p.close_btn{
+p.close_btn{
     display:block;
     position:absolute;
-    top:5%; right:3%;
+    top:0; right:3%;
     cursor:pointer;
     padding:5px;
     box-sizing: border-box;
+}
+p.close_btn img{
+    width: 25px;
 }
 
 nav.navbar>p.close_btn:hover{
@@ -107,6 +110,10 @@ div.nav_btn{
     padding:5px;
     box-sizing: border-box;
     cursor:pointer;
+}
+
+div.nav_btn img{
+    width:20px;
 }
 
 div.nav_btn:hover{
@@ -348,6 +355,10 @@ div.nav_btn{
     box-sizing: border-box;
     cursor:pointer;
 }
+
+div.nav_btn img{
+    width: 20px;
+}
     
 nav.navbar{
     display:flex;
@@ -372,6 +383,20 @@ nav.navbar>ul.navbar_menu{
 nav.navbar>ul.navbar_menu>div.navbar_logo{
     display:flex;
     margin-bottom:30px;
+}
+
+p.close_btn{
+    display:block;
+    position:absolute;
+    top:0; right:3%;
+    cursor:pointer;
+    padding:5px;
+    box-sizing: border-box;
+}
+
+p.close_btn img{
+    width: 25px;
+    padding:45px;
 }
 
 nav.navbar>ul.navbar_menu>div.navbar_logo>img{
@@ -485,7 +510,6 @@ border-color: rgba(172, 133, 92);
 color: rgba(172, 133, 92);
 cursor: pointer;
 }
-
 
 /* #content03>ul.we_illom */
 #content03>ul.we_illom>li{
