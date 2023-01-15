@@ -341,9 +341,13 @@ div#header{
     justify-content: space-around;
 }
     
+header>h1 img{
+    width: 100px;
+}
+
 ul.small_nav{
     position:absolute;
-    top:auto; left:45%;
+    top:auto; left:40%;
 }
     
 div.nav_btn{
@@ -415,13 +419,16 @@ ul.navbar_menu>li>a{
     color: rgba(172, 133, 92, 0.9);
 }
 
+#content01>article>div#center{
+    margin-top:70px;
+}
+
 section#content01>article{
     padding:0;}
 
 #content01>div#left{
     display:flex;
     z-index: 400;
-    /* position:fixed; */
     width:30px;
     padding-top:50px;
     box-sizing: border-box;
@@ -433,16 +440,8 @@ section#content01>article{
     margin-top:-50px;
     padding:0 5px;
     line-height: 27px;
+    font-size: 12px;
 }
-
-div.gall>ul>li>dl{
-    padding-top:150px;}
-
-div.gall>ul>li>dl>dt{
-    font-size:1.5em;}
-
-div.gall>ul>li>dl>dd{
-    font-size:1em;}
 
 #content02>dl>dd{
     line-height: 30px;}
