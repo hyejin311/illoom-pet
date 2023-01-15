@@ -265,9 +265,6 @@ nav.navbar{
 nav.navbar>p.close_btn{
     display:none;}
 
-nav.navbar>ul.navbar_menu>div.navbar_logo{
-    display:none;}
-
 nav.navbar>ul.navbar_menu{
 width:150px;
 text-align:right;

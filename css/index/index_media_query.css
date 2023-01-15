@@ -113,7 +113,7 @@ div.nav_btn{
 }
 
 div.nav_btn img{
-    width:20px;
+    width: 25px;
 }
 
 div.nav_btn:hover{
@@ -349,7 +349,10 @@ ul.small_nav{
     position:absolute;
     top:auto; left:40%;
 }
-    
+ul.small_nav li a{
+    font-size: 14px;
+}
+
 div.nav_btn{
     display: flex;
     position:absolute;
@@ -361,49 +364,46 @@ div.nav_btn{
 }
 
 div.nav_btn img{
-    width: 20px;
+    width:20px;
 }
-    
+
+div.nav_btn:hover{
+    background-color:rgba(218,194,169,0.5);
+    border-radius: 50%;
+}
+
 nav.navbar{
     display:flex;
     position: fixed;
     justify-content: center;
-    width: 100%; height: 100%;
+    width: 50vw; height: 100%;
     right:0; top:70px;
     background-color: rgba(199,167,134,0.6);
     z-index: 500;
-    font-size: 20px;
+    font-size: 11px;
 }
-    
+
 nav.navbar>ul.navbar_menu{
-    width:80vw;
+    width:40vw;
     height: 100vh;
-    padding-top:80px;
-    box-sizing: border-box;
     background-color: #fff;
     text-align: center;
+    line-height: 4;
+    position:absolute;
+    padding-top:60px;
+    box-sizing: border-box;
 }
-    
-nav.navbar>ul.navbar_menu>div.navbar_logo{
+
+div.navbar_logo{
     display:flex;
     margin-bottom:30px;
 }
 
-p.close_btn{
-    display:block;
-    position:absolute;
-    top:0; right:3%;
-    cursor:pointer;
-    padding:5px;
-    box-sizing: border-box;
-}
+ul.navlist li{
+    line-height: 65px;
+    }
 
-p.close_btn img{
-    width: 25px;
-    padding:45px;
-}
-
-nav.navbar>ul.navbar_menu>div.navbar_logo>img{
+div.navbar_logo>img{
     margin:0 auto;}
     
 nav.navbar>ul>li{
@@ -417,6 +417,20 @@ ul.navbar_menu>li>a{
     font-size: 1.2em;
     font-weight: bold;
     color: rgba(172, 133, 92, 0.9);
+}
+
+p.close_btn{
+display: block;
+    position: absolute;
+    top: 0;
+    right: 3%;
+    cursor: pointer;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+p.close_btn img{
+    width: 15px;
 }
 
 #content01>article>div#center{
