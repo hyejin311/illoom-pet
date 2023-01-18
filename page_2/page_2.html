@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>취향 test</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/page2.css">
-    <link rel="stylesheet" href="../css/page2.media_query.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/page2.css">
+    <link rel="stylesheet" href="/css/page2.media_query.css">
 </head>
 
 <body>
@@ -15,46 +15,47 @@
     <div id="wrap">
     <!-- header -->
     <div id="header">
-    <header>
-    <h1>
-        <a href="../index.html">
-    <img src="/img/red_logo.png" alt="logo">pet</h1>
-                
-    <!-- ul.small_nav -->
-    <ul class="small_nav">
-        <li>
-            <a>로그인</a></li>
-        <li><a>회원가입</a></li>
-    </ul>
-            
-    <!-- navbar 햄버거 버튼 -->
-    <div class="nav_btn">
-        <i class="fa-solid fa-bars"></i>
-    </div>
-    </header>
-            
+        <header>
+        <h1>
+        <a href="/index.html">
+            <img src="/img/red_logo.png" alt="logo">pet</a>
+        </h1>
+        
+        <!-- navbar 햄버거 버튼 -->
+        <div class="nav_btn">
+            <img src="/img/main/menu.png" alt="nav_menubtn">
+        </div>
+        
+        <!-- ul.small_nav -->
+        <ul class="small_nav">
+            <li><a>로그인</a></li>
+            <li><a>회원가입</a></li>
+        </ul>
+        </header>
+        </div>
+    
     <!-- nav.navbar -->
-    <nav class="navbar">
+    <div class="nav_wrap">
+        <nav class="navbar">
         <!-- ul.navbar_menu -->
         <ul class="navbar_menu">
         <div class="navbar_logo">
             <img src="/img/red_logo.png" alt="logo">
         </div>
-            <li>
-            <i class="fa-solid fa-magnifying-glass"></i></li>
+        <ul class="navlist">
             <li><a href="/page_1/page_01-1.html">일룸 소개</a></li>
             <li><a href="/page_1/page_02-1.html">가구</a></li>
             <li><a href="/page_1/page_03-1.html">이벤트</a></li>
             <li><a href="/page_1/page_04-1.html">공지사항</a></li>
             <li><a href="/page_1/page_05-1.html">보도자료</a></li>
-            <li>검색</li>
         </ul>
-                
-    <!-- p.close_btn -->
-    <p class="close_btn">
-        <i class="fa-solid fa-x"></i></p>
-    </nav>
-    </div>
+        
+        <!-- p.close_btn -->
+        <p class="close_btn">
+            <img src="/img/main/close.png" alt="close_btn">
+        </p>
+        </ul>
+        </nav></div>
 
 <!--  01 -->
 <div id="container">
@@ -244,8 +245,6 @@
     </footer>
     </div>
 
-    <script src="../js/test.js"></script>
-    <script src="https://kit.fontawesome.com/4476cc0614.js" crossorigin="anonymous"></script>
 <script src="/js/jquery-3.6.0.min.js"></script>
 <script>
 
@@ -280,6 +279,20 @@ $('p.showresult_btn').click(function(e){
     });
 });
 });
+
+function Navbar(){
+    $('.nav_btn>img').on('click',function(){
+        $('.nav_wrap').css('display','block');
+    });
+}
+Navbar();
+
+function Navclose(){
+    $('.close_btn>img').on('click',function(){
+        $('.nav_wrap').css('display','none');
+    });
+}
+Navclose();
 
 //footer data vinding
 var footerInfo=[

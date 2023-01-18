@@ -36,7 +36,7 @@ nav.navbar{
     display:flex;
     position: fixed;
     justify-content: center;
-    width: 50vw; height: 100%;
+    width: 50vw; height: 95%;
     right:0; top:70px;
     background-color: rgba(199,167,134,0.6);
     z-index: 500;
@@ -44,7 +44,7 @@ nav.navbar{
 
 nav.navbar>ul.navbar_menu{
     width:40vw;
-    height: 100vh;
+    height: 80vh;
     background-color: #fff;
     text-align: center;
     line-height: 4;
@@ -94,6 +94,10 @@ p.close_btn img{
 nav.navbar>p.close_btn:hover{
     background-color:rgba(51,51,51,0.4);
     border-radius: 50%;
+}
+
+ul.navlist li{
+    line-height: 3;
 }
 
 div.nav_btn{
@@ -236,7 +240,7 @@ nav.navbar{
     display:flex;
     position: fixed;
     justify-content: center;
-    width: 50vw; height: 100%;
+    width: 100vw; height: 100%;
     right:0; top:70px;
     background-color: rgba(199,167,134,0.6);
     z-index: 500;
@@ -244,23 +248,27 @@ nav.navbar{
 }
 
 nav.navbar>ul.navbar_menu{
-    width:40vw;
+    width:80vw;
     height: 100vh;
     background-color: #fff;
     text-align: center;
     line-height: 4;
     position:absolute;
-    padding-top:60px;
+    padding-top:80px;
     box-sizing: border-box;
 }
 
 div.navbar_logo{
     display:flex;
-    margin-bottom:30px;
+    margin-bottom:50px;
 }
 
 ul.navlist li{
-    line-height: 65px;
+    line-height: 80px;
+    }
+
+    ul.navlist>li>a{
+        font-size: 26px;
     }
 
 div.navbar_logo>img{
@@ -274,7 +282,7 @@ nav.navbar>ul>li{
 } 
 
 ul.navbar_menu>li>a{
-    font-size: 1.2em;
+    font-size: 24px;
     font-weight: bold;
     color: rgba(172, 133, 92, 0.9);
 }
@@ -282,7 +290,7 @@ ul.navbar_menu>li>a{
 p.close_btn{
 display: block;
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 3%;
     cursor: pointer;
     padding: 5px;
@@ -290,8 +298,7 @@ display: block;
 }
 
 p.close_btn img{
-    width: 15px;
-}
+    width: 15px;}
     
 ul.list{
     width: 100%;
