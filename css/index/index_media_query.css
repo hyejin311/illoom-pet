@@ -404,7 +404,7 @@ div.navbar_logo{
 }
 
 ul.navlist li{
-    line-height: 80px;
+    line-height: 60px;
     }
 
     ul.navlist>li>a{
@@ -491,6 +491,7 @@ section#content01>article{
 #content02>div#test_pic>figure.pic03{
     width:100vw;
     position:static;
+    text-align: center;
 }
 
 #content02>div#test_pic figure img{
@@ -500,7 +501,7 @@ section#content01>article{
 
 #content02>div#test_pic>figure.pic03>img.pic03_1,
 #content02>div#test_pic>figure.pic03>img.pic03_2{
-   width:45%;
+   width:100%;
    padding:0 10px;
 }
 

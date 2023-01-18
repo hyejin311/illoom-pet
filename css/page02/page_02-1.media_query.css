@@ -101,7 +101,7 @@ nav.navbar>p.close_btn:hover{
 }
 
 ul.navlist li{
-    line-height: 3;
+    line-height: 60px;
 }
 
 div.nav_btn{
@@ -332,7 +332,7 @@ div#filter{
 /* p.pricefilter */
 ul.pricefilter{
     width: 200px;
-    left:60%;
+    left:25%;
 }
 
 ul.pricefilter>li{

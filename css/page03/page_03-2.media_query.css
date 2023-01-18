@@ -94,7 +94,7 @@ nav.navbar>p.close_btn:hover{
 }
 
 ul.navlist li{
-    line-height: 5;
+    line-height: 60px;
 }
 
 div.nav_btn{
