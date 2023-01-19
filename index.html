@@ -73,24 +73,24 @@
 
 <ul class="mainimg_wrap">
     <li>
-        <img src="./img/main/main_img1.png" alt="mainimg01">
+        <img src="/img/main/main_img1.png" alt="mainimg01">
     </li>
 
     <li>
-        <img src="./img/main/main_img2.png" alt="mainimg02">
+        <img src="/img/main/main_img2.png" alt="mainimg02">
     </li>
 
-    <li><img src="./img/main/main_img3.png" alt="mainimg03"></li>
+    <li><img src="/img/main/main_img3.png" alt="mainimg03"></li>
 </ul>
 
 <!-- div#prev -->
 <p class="prev">
-    <img src="./img/main/left-arrow.png" alt="left_btn">
+    <img src="/img/main/left-arrow.png" alt="left_btn">
 </p>
 
 <!-- div#next -->
 <p class="next">
-<img src="./img/main/right-arrow.png" alt="right_btn">
+<img src="/img/main/right-arrow.png" alt="right_btn">
 </p>
 </div>
 </div>
@@ -172,8 +172,10 @@
 <!-- figure.pic03 -->
 <figure class="pic03">
     <img class="pic03_1" src="/img/main/desk step.jpg" alt="데스크스텝">
-    <img class="pic03_2" src="/img/main/sofa table.jpg" alt="소파테이블">
-    <img class="pic03_3" src="/img/main/pet sofa.jpg" alt="펫 소파">
+    <img class="pic03_2" src="/img/main/sofa table.jpg" alt="소파테이블"></figure>
+  <figure class="pic04">
+    <img class="pic04_1" src="/img/main/pet sofa.jpg" alt="펫 소파">
+    <!-- <img class="pic03_3" src="/img/main/pet sofa.jpg" alt="펫 소파"> -->
 <figcaption>
     <p>언제나 무얼 하든 함께</p>
     <p>데스크스텝 / 해먹 테이블 / 펫 소파</p>
@@ -401,9 +403,8 @@
 </footer>
 </div>
 
-<script src="https://kit.fontawesome.com/4476cc0614.js" crossorigin="anonymous"></script>
 <script src="/js/jquery-3.6.0.min.js"></script>
-<script src="../js/search.js"></script>
+<script src="/js/search.js"></script>
 
 <!-- script -->
 <script>
@@ -453,6 +454,13 @@ function Navclose(){
 }
 Navclose();
 
+
+function Fig(){
+    $('#test_pic>figure').on('mouseover',function(){
+        $(this).addClass(blur);
+    });
+}
+Fig();
 
 
 //footer data vinding

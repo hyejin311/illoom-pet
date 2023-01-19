@@ -120,9 +120,6 @@ nav.navbar{
     align-items: center;
 }
 
-nav.navbar>p.close_btn{
-    display:none;}
-
 nav.navbar>ul.navbar_menu{
 width:150px;
 text-align:right;
@@ -176,8 +173,8 @@ div.area01>img{
 
 div p{
     margin:30px 0;
-    font-size: 15px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 2.5;
 }
 
 section#content02 div p b{

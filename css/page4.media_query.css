@@ -119,6 +119,11 @@ div.nav_btn:hover{
     border-radius: 50%;
 }
 
+div.nav_btn:hover{
+    background-color:rgba(218,194,169,0.5);
+    border-radius: 50%;
+}
+
 p.thumb_nail{
     margin-bottom: 100px;
 }
@@ -248,7 +253,7 @@ div.sns_icon ul li:last-child{
     }
     
     ul.navlist li{
-        line-height: 80px;
+        line-height: 50px;
         }
     
         ul.navlist>li>a{

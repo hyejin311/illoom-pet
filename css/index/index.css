@@ -305,32 +305,45 @@ ul.navlist>li>a:hover{
 
 /* #content02>div#test_pic */
 #content02>div#test_pic{
-    width: 100%; /* 1200px*/
+    width: 90%; /* 1200px*/
     margin:0 auto;
     position:relative;
 }
 
+#content02>div#test_pic img:hover{
+    -webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px);
+}
+
 #content02>div#test_pic>figure.pic01{
     position:absolute;
-    left: 0; top:0;
-    width: 25%; /* 300px; */
+    left: 10%; top:0;
+    width: 20%; /* 300px; */
 }
 
 #content02>div#test_pic>figure.pic02{
     position:absolute;
-    right:0; top:0;
-    width: 25%; /* 300px; */
+    right:10%; top:0;
+    width: 20%; /* 300px; */
 }
 
 #content02>div#test_pic>figure.pic03{
-    width: 45.8333333%; /* 550px; */
+    width: 18%; /* 550px; */
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+}
+
+#content02>div#test_pic>figure.pic04{
+    text-align: center;
+    width: 35%;
     margin:0 auto;
 }
 
 #content02>div#test_pic>figure.pic03>img.pic03_1,img.pic03_2{
    margin-bottom:17px;}
 
-#content02>div#test_pic>figure.pic03>img.pic03_3{
+#content02>div#test_pic>figure.pic04>img.pic04_1{
     margin-bottom:0;}
 
 #content02>div#test_pic figcaption{
@@ -343,7 +356,7 @@ ul.navlist>li>a:hover{
 
 #content02 figure>figcaption> p:last-child{
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.1em;
     color: rgba(172, 133, 92, 0.9);
 }
 
@@ -367,7 +380,7 @@ cursor: pointer;
 
 /* #content03>ul.we_illom */
 #content03>ul.we_illom{
-    width:100%;
+    width:80%;
     margin:70px auto 0;
     display:flex;
     justify-content: center;
@@ -375,7 +388,7 @@ cursor: pointer;
 }
 
 #content03>ul.we_illom>li{
-width:22%;
+width:20%;
 margin: 0 1.5%;
 }
 
@@ -387,7 +400,7 @@ margin: 0 1.5%;
 
 #content03>ul.we_illom>li>figure>p{
     margin:20px 0;
-    height: 5vh;
+    font-size: 14px;
 }
 
 #content03>ul.we_illom>li>figure>figcaption{
@@ -400,8 +413,8 @@ margin: 0 1.5%;
 }
 
 ul.we_illom>li>figure>figcaption>dl{
-    width: 100%;
     margin-left: 10px;
+    font-size: 14px;
 }
 
 ul.we_illom>li>figure>figcaption>dl>dd{
@@ -470,13 +483,13 @@ div.video_list>p.right_btn{
     margin-top:50px;
     text-align: center;
     color:#ac855c;
-    font-size:1.5em;
+    font-size:16px;
 }
 
 /* content05 */
 #content05>ul.illom_news{
     display:flex;
-    width: 100%;
+    width: 80%;
     justify-content: space-evenly;
     margin:0 auto 60px;
     text-align: center;
@@ -498,15 +511,16 @@ ul.illom_news li figure figcaption dl>dt{
     padding:15px 0;
     box-sizing: border-box;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 16px;
     border-bottom:3px solid rgb(172, 133, 92);
     color:rgb(134, 104, 72);
 }
 
 ul.illom_news li figure figcaption dl>dd{
     padding:10px 0;
+    font-size: 14px;
     box-sizing: border-box;
-    line-height: 27px;
+    line-height: 1.5;
     color:rgb(134, 104, 72);
 }
 
