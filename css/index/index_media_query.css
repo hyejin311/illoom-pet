@@ -503,7 +503,8 @@ section#content01>article{
 }
 
 #content02>div#test_pic>figure.pic04{
-    width: 100%;
+    width: 90%;
+    margin:0 auto;
 }
 
 #content02>div#test_pic figure img{
@@ -513,7 +514,8 @@ section#content01>article{
 
 #content02>div#test_pic>figure.pic03>img.pic03_1,
 #content02>div#test_pic>figure.pic03>img.pic03_2{
-   width:100%;
+   width:90%;
+   margin:0 auto;
    padding:0 10px;
 }
 
@@ -592,7 +594,8 @@ ul.we_illom>li>figure>figcaption>dl>dd{
     display:block; }
     
     #content04>div.video_img>p{
-        width:100%;
+        width:90%;
+        margin:0 auto;
     }
     #content04>div.video_img>div{
         width:100%;
