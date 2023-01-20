@@ -403,7 +403,7 @@ div.navbar_logo{
 }
 
 ul.navlist li{
-    line-height: 60px;
+    line-height: 50px;
     }
 
     ul.navlist>li>a{
@@ -438,6 +438,11 @@ display: block;
 
 p.close_btn img{
     width: 15px;}
+
+    div#top_btn{
+        width: 50px;
+        height: 50px;
+    }
 
 p.prev{
     left: 8%;}
@@ -488,9 +493,17 @@ section#content01>article{
 #content02>div#test_pic>figure.pic01,
 #content02>div#test_pic>figure.pic02,
 #content02>div#test_pic>figure.pic03{
-    width:100vw;
+    width:100%;
     position:static;
     text-align: center;
+}
+
+#content02>div#test_pic>figure.pic03{
+    display: block;
+}
+
+#content02>div#test_pic>figure.pic04{
+    width: 100%;
 }
 
 #content02>div#test_pic figure img{
@@ -544,19 +557,18 @@ margin: 0;
     margin-top:30px;
     text-align: center;
     font-weight: bold;
-    font-size: 21px;
+    font-size: 16px;
 }
 
 #content03>ul.we_illom>li>figure>figcaption{
-    width: 90vw;
-    margin:50px auto 100px;
+    margin:50px auto;
 }
 
 ul.we_illom>li>figure>img:first-child{
     width: 100vw;}
 
 ul.we_illom>li>figure>img:nth-child(2){
-    width: 40vw;
+    width: 100px;
     margin:20px 50px;
 }
 
@@ -566,8 +578,7 @@ ul.we_illom>li>figure>figcaption>img{
 ul.we_illom>li>figure>figcaption>dl{
     width: 60%;
     margin:0 auto;
-    font-size: 20px;
-    line-height: 60px;
+    font-size: 16px;
     padding-left: 20px;
     box-sizing: border-box;
 }
@@ -581,7 +592,7 @@ ul.we_illom>li>figure>figcaption>dl>dd{
     display:block; }
     
     #content04>div.video_img>p{
-        width:100vw;
+        width:100%;
     }
     #content04>div.video_img>div{
         width:100%;
@@ -618,18 +629,15 @@ ul.we_illom>li>figure>figcaption>dl>dd{
         display:none;}
     
     #content04>div.video_img>div>p.left_btn{
-        display: block;
-        left:0; top:35%;}
+        display: none;}
 
     #content04>div.video_img>div>p.right_btn{
-        display: block;
-        left:97vw; top:35%;
+        display: none;
     }
     
     /* #content04 div.video_desc */
     #content04 div.video_desc{
-        margin-top:20px;
-        font-size:1em;
+        font-size:14px;
 }
 
 /* content05 */
@@ -655,7 +663,7 @@ ul.illom_news li figure figcaption dl>dt{
     padding:15px 0;
     box-sizing: border-box;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 15px;
     border-bottom:3px solid rgb(172, 133, 92);
 }
 
