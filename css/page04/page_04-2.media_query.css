@@ -75,17 +75,17 @@ div.down_footer>div.footer_info{width: 1200px;}
         border-bottom: 3px solid rgb(230, 180, 126);
         }
     
-    p.close_btn{
-        display:block;
-        position:absolute;
-        top:0; right:3%;
-        cursor:pointer;
-        padding:5px;
-        box-sizing: border-box;
-    }
-    p.close_btn img{
-        width: 25px;
-    }
+        p.close_btn{
+            display:block;
+            position:absolute;
+            top:5%; right:8%;
+            cursor:pointer;
+            padding:5px;
+            box-sizing: border-box;
+        }
+        p.close_btn img{
+            width: 25px;
+        }
     
     nav.navbar>p.close_btn:hover{
         background-color:rgba(51,51,51,0.4);
@@ -264,6 +264,10 @@ ul.navbar_menu>li>a{
     font-weight: bold;
     color: rgba(172, 133, 92, 0.9);
 }
+
+div#top_btn{
+    width: 50px;
+    height: 50px;}
 
 p.close_btn{
 display: block;
