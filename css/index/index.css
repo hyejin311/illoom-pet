@@ -134,9 +134,9 @@ section#content01>article{
 
 #content01>div#left>p{
     margin:0 auto;
-    width:100%;
-    transform-origin: center;
-    transform:rotate(270deg);
+    width:1%;
+    line-height: 35px;
+    font-size: 20px;
 }
 
 /* #content01>div.center */
