@@ -22,9 +22,8 @@ section#content05{width:1200px;}
     }
 
     #content01>div#left>p{
-        width:11%;
-        line-height: 30px;
-        transform:rotate(0);
+        line-height: 20px;
+        font-size: 14px;
     }
 
 section#content02{width:1200px;}
@@ -44,7 +43,6 @@ div.down_footer>div.footer_info{width:1200px;}
 
     #content01>div#left>p{
         width:50%;
-        line-height: 30px;
         transform:rotate(0);
         font-size: 14px;
     }
@@ -209,7 +207,7 @@ section#content02>div#test_pic>figure.pic02{
 
 section#content02>div#test_pic>figure.pic03{
     width:100%;
-    margin-bottom:0;
+    margin-bottom:30px;
     text-align: center;
 }
 
@@ -299,17 +297,11 @@ top:50px;
 }
 
 #content04>div.video_img>div>p.left_btn{
-    display:flex;
-    left:10px;
-    align-items: center;
-    justify-content: center;
+    display:none;
 }
 
 #content04>div.video_img>div>p.right_btn{
-    display:flex;
-    margin-left: 5px;
-    align-items: center;
-    justify-content: center;
+    display:none;
 }
 
 #content04>div.video_img>div>p.up_btn,
